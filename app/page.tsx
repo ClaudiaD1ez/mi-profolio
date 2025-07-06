@@ -1,0 +1,19 @@
+import Navbar from "@/components/navbar";
+import Introduction from "@/components/introduction"
+import Image from "next/image";
+import AboutMe from "@/components/about-me";
+import Experience from "@/components/experience";
+import Services from "@/components/services";
+
+
+export default function Home() {
+  return (
+    <main className="">
+      <Navbar/>
+      <Introduction/>
+      <AboutMe/>
+      <Experience />
+      <Services />
+    </main>
+  );
+}
