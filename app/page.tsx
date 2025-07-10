@@ -4,6 +4,9 @@ import Image from "next/image";
 import AboutMe from "@/components/about-me";
 import Experience from "@/components/experience";
 import Services from "@/components/services";
+import Portfolio from "@/components/portfolio";
+import Testimonials from "@/components/testimonials";
+import Contact from "@/components/contact";
 
 
 export default function Home() {
@@ -14,6 +17,9 @@ export default function Home() {
       <AboutMe/>
       <Experience />
       <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact/>
     </main>
   );
 }
