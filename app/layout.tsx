@@ -1,34 +1,20 @@
-import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "next-themes";
-
-const urbanist = Urbanist({
-  subsets: ["latin"],
-});
+import './globals.css'
+import { ThemeProvider } from "@/components/theme-provider"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "ClaudiaDS",
-  description: "Porfolio by Claudia.DS",
-};
+  title: "Portfolio | Tu nombre",
+  description: "Desarrollador Front-End con enfoque moderno",
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={urbanist.className}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-         {children}
+    <html lang="es" suppressHydrationWarning>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

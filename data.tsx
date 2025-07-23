@@ -1,7 +1,64 @@
 import { BellPlus, BookText, Briefcase, Brush, Code2, CodeSquare, Home, Inbox, Mail, PanelsTopLeft, Phone, UserRound, UsersRound, Wrench } from "lucide-react";
+import { id } from "zod/v4/locales";
 
 
-export const dataAboutMe = [
+export const itemsNavbar = [
+    {
+        id: 1,
+        title: "Home",
+        icon: <Home size={20} />,
+        link: "#home",
+    },
+    {
+        id: 2,
+        title: "About Me",
+        icon: <UserRound size={20} />,
+        link: "#about-me",
+    },
+    {
+        id: 3,
+        title: "Skills",
+        icon: <BookText size={20} />,
+        link: "#services",
+    },
+    {
+        id: 4,
+        title: "Proyectos",
+        icon: <CodeSquare size={20} />,
+        link: "#portfolio",
+    },
+    {
+        id: 5,
+        title: "Contacto",
+        icon: <Mail size={20} />,
+        link: "#contact",
+    },
+];
+
+
+export const dataRRSS = [
+    {
+        id: 1,
+        name: "GitHub",
+        url: "/icons/github.svg",
+        link: "",
+    },
+    {
+        id: 2,
+        name: "Linkedin",
+        url: "/icons/linkedin.svg",
+        link: "",
+    },
+    {
+        id: 3,
+        name: "claudia.diezsan@gmail.com",
+        url: "/icons/email.svg",
+        link: "",
+    },
+];
+
+
+export const dataAboutGoals = [
     {
         id: 1,
         name: "Experiencia",
@@ -23,36 +80,21 @@ export const dataAboutMe = [
 ];
 
 
-export const itemsNavbar = [
+export const dataAboutExperience = [
     {
         id: 1,
-        title: "Home",
-        icon: <Home size={20} />,
-        link: "#home",
+        name: "Accom",
+        description: "Creación y mantenimiento de lading pages para lo que utilizamos tecnologías como PHP, JavaScript, jQuery...",
     },
     {
         id: 2,
-        title: "User",
-        icon: <UserRound size={20} />,
-        link: "#about-me",
+        name: "Ucademy",
+        description: "Participé en el desarrollo de su pagina web y plataforma de cursos on-line",
     },
     {
         id: 3,
-        title: "Book",
-        icon: <BookText size={20} />,
-        link: "#services",
-    },
-    {
-        id: 4,
-        title: "Target",
-        icon: <CodeSquare size={20} />,
-        link: "#portfolio",
-    },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Mail size={20} />,
-        link: "#contact",
+        name: "Codenotch",
+        description: " +4 años de experiencia+4 años de experiencia +4 años de experiencia+4 años de experiencia+4 años de experiencia",
     },
 ];
 
@@ -123,78 +165,104 @@ export const dataPortfolio = [
 ];
 
 
-export const dataExperience = [
+export const dataSkills = [
     {
         id: 1,
-        title: "Frontend Development  💄",
-        experience: [
-            {
-                name: "HTML",
-                subtitle: "Experimentado",
-                value: 80,
-            },
-            {
-                name: "CSS",
-                subtitle: "Intermedio",
-                value: 75,
-            },
-            {
-                name: "JavaScript",
-                subtitle: "Experimentado",
-                value: 60,
-            },
-            {
-                name: "Tailwind CSS",
-                subtitle: "Experimentado",
-                value: 30,
-            },
-            {
-                name: "React",
-                subtitle: "Experimentado",
-                value: 60,
-            },
-            {
-                name: "Bootstrap",
-                subtitle: "Basic",
-                value: 50,
-            },
-        ],
+        url: "/icons/icon-html.png",
+        name: "HTML",
+        subtitle: "Experimentado",
+        value: 85,
     },
     {
         id: 2,
-        title: "Backend Development  🥷",
-        experience: [
-            {
-                name: "Node JS",
-                subtitle: "Experimentado",
-                value: 80,
-            },
-            {
-                name: "Mongo DB",
-                subtitle: "Intermedio",
-                value: 75,
-            },
-            {
-                name: "Python",
-                subtitle: "Basic",
-                value: 60,
-            },
-            {
-                name: "MySQL",
-                subtitle: "Experimentado",
-                value: 60,
-            },
-            {
-                name: "PHP",
-                subtitle: "Experimentado",
-                value: 60,
-            },
-            {
-                name: "Django",
-                subtitle: "Basic",
-                value: 60,
-            },
-        ],
+        url: "/icons/icon-css.png",
+        name: "CSS",
+        subtitle: "Intermedio",
+        value: 85,
+    },
+    {
+        id: 3,
+        url: "/icons/icon-js.png",
+        name: "JavaScript",
+        subtitle: "Experimentado",
+        value: 60,
+    },
+    {
+        id: 4,
+        url: "/icons/icon-sass.png",
+        name: "Sass",
+        subtitle: "Experimentado",
+        value: 50,
+    },
+        {
+        id: 5,
+        url: "/icons/icon-php.png",
+        name: "PHP",
+        subtitle: "PHP",
+        value: 50,
+    },
+    {
+        id: 6,
+        url: "/icons/icon-typescript.png",
+        name: "Typescript",
+        subtitle: "Typescript",
+        value: 50,
+    },
+    {
+        id: 7,
+        url: "/icons/icon-react.png",
+        name: "React",
+        subtitle: "Experimentado",
+        value: 60,
+    },
+        {
+        id: 8,
+        url: "/icons/icon-node.png",
+        name: "NodeJS",
+        subtitle: "Experimentado",
+        value: 60,
+    },
+    {
+        id: 9,
+        url: "/icons/icon-docker.png",
+        name: "Docker",
+        subtitle: "Experimentado",
+        value: 60,
+    },
+    {
+        id: 10,
+        url: "/icons/icon-vscode.png",
+        name: "Visual Studio Code",
+        subtitle: "Intermedio",
+        value: 80,
+    },
+        {
+        id: 11,
+        url: "/icons/icon-git.png",
+        name: "Git",
+        subtitle: "Experimentado",
+        value: 50,
+    },
+    {
+        id: 12,
+        url: "/icons/icon-figma.png",
+        name: "Figma",
+        subtitle: "Experimentado",
+        value: 30,
+    },
+    {
+        id: 13,
+        url: "/icons/icon-bootstrap.png",
+        name: "Bootstrap",
+        subtitle: "Basic",
+        value: 50,
+    },
+    {
+        id: 14,
+        url: "/icons/icon-tailwind.png",
+        name: "Tailwind",
+        subtitle: "Basic",
+        value: 50,
     },
 ];
 
@@ -202,85 +270,64 @@ export const dataExperience = [
 export const dataServices = [
     {
         id: 1,
-        title: "Desarrollo Web",
-        icon: <PanelsTopLeft />,
+        title: "Clean code",
+        url: "/icons/codigo.png",
         features: [
             {
-                name: "Desarrollo de sitios web personalizados",
-            },
-            {
-                name: "Diseño y desarrollo responsive",
-            },
-            {
-                name: "Optimización SEO",
-            },
-            {
-                name: "Desarrollo de aplicaciones web",
-            },
-            {
-                name: "Gestión de contenido",
-            },
-            {
-                name: "Comercio electrónico",
-            },
-            {
-                name: "Mantenimiento y soporte continuo",
+                name: "Estructura clara, código comentado y organizado para que sea fácil de actualizar.",
             },
         ],
     },
     {
         id: 2,
-        title: "Creación de contenido",
-        icon: <BellPlus />,
+        title: "Responsive design",
+        url: "/icons/movil.png",
         features: [
             {
-                name: "Redacción de contenido original y de calidad",
-            },
-            {
-                name: "Creación de vídeos atractivos y dinámicos",
-            },
-            {
-                name: "Diseño gráfico para una imagen impactante",
-            },
-            {
-                name: "Edición profesional de textos y materiales visuales",
-            },
-            {
-                name: "Estrategias de marketing de contenidos efectivas",
-            },
-            {
-                name: "Producción de podcasts informativos y entretenidos",
-            },
-            {
-                name: "Generación de infografías claras y visualmente atractivas",
-            },
-            {
-                name: "Fotografía profesional para capturar momentos excepcionales",
+                name: "Diseño pensado desde el celular hacia arriba, para cubrir a todos los usuarios.",
             },
         ],
     },
     {
         id: 3,
-        title: "UI/UX Design",
-        icon: <Brush />,
+        title: "Buenas prácticas de seguridad",
+        url: "/icons/proteger.png",
         features: [
             {
-                name: "Diseño intuitivo para una experiencia de usuario fluida",
+                name: "Manejo correcto de formularios, validación básica, HTTPS y CORS.",
+            },
+        ],
+    },
+        {
+        id: 4,
+        title: "Escalabilidad",
+        url: "/icons/crecer.png",
+        features: [
+            {
+                name: "Desarrollo basado en componentes con React para que tu sitio escale fácilmente.",
+            },
+        ],
+    },
+        {
+        id: 5,
+        title: "Integración de APIs",
+        url: "/icons/api.png",
+        features: [
+            {
+                name: "Mostrar datos externos",
             },
             {
-                name: "Prototipado interactivo para visualizar la interfaz",
+                name: "APIs públicas o privadas.",
             },
+        ],
+    },
+        {
+        id: 6,
+        title: "Aprendizaje constante",
+        url: "/icons/cerebro.png",
+        features: [
             {
-                name: "Investigación de usuarios para comprender necesidades y expectativas",
-            },
-            {
-                name: "Optimización de la usabilidad para mejorar la accesibilidad",
-            },
-            {
-                name: "Pruebas de usabilidad para evaluar la experiencia",
-            },
-            {
-                name: "Diseño responsive para adaptarse a diferentes dispositivos",
+                name: "Siempre explorando nuevas herramientas y buenas prácticas del desarrollo web.",
             },
         ],
     },

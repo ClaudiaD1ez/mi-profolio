@@ -1,0 +1,82 @@
+.aboutSection {
+    padding: 6rem 0;
+}
+
+.aboutSection .aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    margin-top: 40px;
+}
+
+.aboutSection .aboutContainer .goalsContainer {
+    width: 30%;
+}
+
+.aboutSection .aboutContainer .goalsContainer .goalsCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.aboutSection .aboutContainer .goalsContainer .goalsCards .card {
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid var(--foreground);
+}
+
+.aboutSection .aboutContainer .goalsContainer button{
+    min-width: 100%;
+    margin-top: 22px;
+}
+
+.aboutSection .aboutContainer .experienceContainer {
+    max-width: 33%;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences .experienceItem {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences .lineRoute {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences .lineRoute .line {
+  flex: 1;
+  width: 2px;
+  background-color: var(--foreground);
+  margin-top: 4px;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences .lineRoute .dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--foreground);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences .content .title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.aboutSection .aboutContainer .experienceContainer .experiences .content .text {
+    font-size: 16px;
+    font-weight: 400;
+}

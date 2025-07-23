@@ -1,60 +1,52 @@
-import { dataAboutMe, dataSlider } from "@/data";
+import { dataAboutGoals, dataAboutExperience, dataSlider } from "@/data";
 import Title from "./shared/title";
 import { Button } from "./ui/button";
-import { Phone } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
+import { Container, Phone } from "lucide-react";
 import Image from "next/image";
+import "../components/styles/aboutMe.css"
 
 const AboutMe = () => {
     return(
-        <div className="p-6 md:px-12 md:py-30 max-w-5xl mx-auto" id="about-me">
-            <Title title="Sobre mi" subtitle="Conoceme" />
+         <div className="aboutSection" id="about-me">
+            <div className="container">
+                <Title title="Sobre mi" subtitle="Conoceme" />
+                <div className="aboutContainer">
 
-            <div className="grid md:grid-cols-2">
-                <div className="py-12 md:py-0 flex items-center justify-center">
-                    <Carousel
-                    opts={{align:"start"}}
-                    orientation="vertical"
-                    className="w-full max-w-xs h-fit"
-                    >
-                        <CarouselContent className="-mt-1 h-[200px]">
-                            {dataSlider.map((data => (
-                                <CarouselItem key={data.id}>
-                                    <div className="flex items-center justify-center">
-                                        <Image 
-                                            src={data.url} 
-                                            alt="Image" 
-                                            width={250} 
-                                            height={400} 
-                                            className="w-full h-auto rounded-lg"/>
-                                    </div>
-                                </CarouselItem>
-                            )))}
-                        </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext/>
-
-                    </Carousel>
-                </div>
-
-                <div>
-                    <div className="grid md:grid-cols-3 mt-7 gap-4">
-                        {dataAboutMe.map((data) => (
-                            <div key={data.id} className="border border-white-10 rpunded-xl p-4 shadow-m shadow-slate-100 dark bd-slate-800">
-                                {data.icon}
-                                <p className="my-2">{data.name}</p>
-                                <p className="text-gray-400">{data.description}</p>
-                            </div>
-                        ))}
+                    <div className="goalsContainer">
+                        <div className="goalsCards">
+                            {dataAboutGoals.map((data) => (
+                                <div key={data.id} className="card">
+                                    {data.icon}
+                                    <p className="my-2">{data.name}</p>
+                                    <p className="text-gray-400">{data.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                        
+                        <Button>
+                            <Phone className="aboutBtn"/> Hablamos
+                        </Button>
                     </div>
 
-                    <p className="py-8">H dciuhs hcdhcd duyhgc uygdc uigch sioiHC Iucvh
-                        ui UIODCH dciuhs hcdhcd duyhgc uygdc uigch sioiHC Iucvh ui UIODCH
-                        Iucvh ui UIODCH dciuhs hcdhcd duyhgc uygdc uigch sioiHC Iucvh ui </p>
-                    
-                    <Button>
-                        <Phone size={20} className="mr-2"/> Hablamos
-                    </Button>
+                    <div className="experienceContainer">
+                        <div className="experiences">
+                            {dataAboutExperience.map((data) => (
+                                <div key={data.id} className="experienceItem">
+
+                                    <div className="lineRoute">
+                                        <span className="dot" />
+                                        <span className="line" />
+                                    </div>
+
+                                    <div className="content">
+                                        <p className="title">{data.name}</p>
+                                        <p className="text">{data.description}</p>
+                                    </div>
+
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

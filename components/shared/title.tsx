@@ -6,9 +6,9 @@ interface TitleProps {
 const Title = (props: TitleProps) => {
     const {title, subtitle} = props
     return(
-        <div className="flex flex-col items-center">
-            <h3 className="text-grey-400">{title}</h3>
-            <h2 className="text-3xl">{subtitle}</h2>
+        <div className="titleContainer">
+            <h3 className="title">{title}</h3>
+            <h2 className="subtitle">{subtitle}</h2>
         </div>
     );
 }
