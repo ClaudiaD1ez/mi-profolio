@@ -1,4 +1,5 @@
 .banner-central {
+  background-color: var(--background-dark);
   padding-top: 130px;
   height: 93vh;
 }
@@ -7,13 +8,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--background);
   height: 76vh;
   margin: auto;
 }
 
 .banner-central .bannerContainer .linea-franja {
-  background-color: var(--background);
+  background-color: var(--background-dark);
   position: relative;
   width: 100%;
 }

@@ -8,21 +8,38 @@ import "../components/styles/skills.css"
 
 const Skills = () => {
     return(
-        <div className="skillSection" id="skills">
-            <div className="container">
-                <Title title="Skills" subtitle="Mis skills"/>
-                <div className="skillContainer">
-                    {dataSkills.map((data) => (
-                        <div key={data.name} className="skill my-4">
-                            <Image src={data.url} alt="Image" width={40} height={40} className=""/>
-                            <p className="flex gap-2 mb-2">{data.name}</p>
-                            {/* <p className="text-gray-400 mb-2">{data.subtitle}</p> */}
-                            <Progress value={data.value} className="w-[60%]" />
-                        </div>
-                    ))}
-                </div>
+    <section id="skills" className="skillSection">
+      <div className="container">
+        <Title title="Skills" subtitle="Tecnologías & Herramientas" />
+
+        <div className="cardContainer">
+          {dataSkills.map((category, index) => (
+            <div key={index} className="cardSkill">
+              <div className="cardTitle">
+                <div className="icon">{category.icon}</div>
+                <h3 className="title">
+                  {category.title}
+                </h3>
+              </div>
+
+              <div className="cardInfo">
+                {category.skills.map((skill, skillIndex) => (
+                  <div key={skillIndex}>
+                    <div className="techContainer">
+                      <span className="techName"> {skill.name} </span>
+                      <span className="techLevel"> {skill.level} </span>
+                    </div>
+                    <div className="levelLine">
+                      <div className="line" style={{ width: `${skill.level}%` }}> </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
+          ))}
         </div>
+      </div>
+    </section>
     );
 }
 

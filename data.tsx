@@ -1,5 +1,4 @@
-import { BellPlus, BookText, Briefcase, Brush, Code2, CodeSquare, Home, Inbox, Mail, PanelsTopLeft, Phone, UserRound, UsersRound, Wrench } from "lucide-react";
-import { id } from "zod/v4/locales";
+import { BellPlus, BookText, Briefcase, Brush, Code, Code2, CodeSquare, Database, Globe, Home, Inbox, Mail, Palette, PanelsTopLeft, Phone, Smartphone, UserRound, UsersRound, Wrench, Zap } from "lucide-react";
 
 
 export const itemsNavbar = [
@@ -40,19 +39,19 @@ export const dataRRSS = [
     {
         id: 1,
         name: "GitHub",
-        url: "/icons/github.svg",
+        url: "img/icons/github.svg",
         link: "",
     },
     {
         id: 2,
         name: "Linkedin",
-        url: "/icons/linkedin.svg",
+        url: "img/icons/linkedin.svg",
         link: "",
     },
     {
         id: 3,
         name: "claudia.diezsan@gmail.com",
-        url: "/icons/email.svg",
+        url: "img/icons/email.svg",
         link: "",
     },
 ];
@@ -82,20 +81,35 @@ export const dataAboutGoals = [
 
 export const dataAboutExperience = [
     {
-        id: 1,
-        name: "Accom",
-        description: "Creación y mantenimiento de lading pages para lo que utilizamos tecnologías como PHP, JavaScript, jQuery...",
+      id: 1,
+      company: 'We Accom',
+      position: 'Front-End Developer',
+      period: '2022 - Presente',
+      location: 'Madrid, España',
+      description: 'Lidero el desarrollo de aplicaciones React complejas, implementando arquitecturas escalables y mejorando la experiencia de usuario en un 40%.',
+      logo: '/img/accom.png',
+      technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL']
     },
     {
-        id: 2,
-        name: "Ucademy",
-        description: "Participé en el desarrollo de su pagina web y plataforma de cursos on-line",
+      id:2,
+      company: 'Ucademy',
+      position: 'Junior Front-End Developer',
+      period: '2021 - 2022',
+      location: 'Madrid, España',
+      description: 'Desarrollé interfaces de usuario modernas para startups fintech, colaborando estrechamente con equipos de diseño UX/UI y backend.',
+      logo: '/img/ucademy.webp',
+      technologies: ['Vue.js', 'JavaScript', 'SASS', 'REST APIs']
     },
     {
-        id: 3,
-        name: "Codenotch",
-        description: " +4 años de experiencia+4 años de experiencia +4 años de experiencia+4 años de experiencia+4 años de experiencia",
-    },
+      id:3,
+      company: 'Codenotch',
+      position: 'Student Full-Stack Developer',
+      period: '2020 - 2020',
+      location: 'Madrid, España',
+      description: 'Comencé mi carrera desarrollando sitios web responsive y landing pages, aprendiendo las mejores prácticas de desarrollo web moderno.',
+      logo: '/img/codenotch.jpeg',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap']
+    }
 ];
 
 
@@ -120,216 +134,163 @@ export const dataSlider = [
 
 
 export const dataPortfolio = [
-    {
-        id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+     {
+      title: 'E-Commerce Dashboard',
+      description: 'Panel de administración completo para tienda online con gestión de productos, pedidos y análisis en tiempo real.',
+      image: '/img/proyectos/landing-jazztel.png',
+      videoUrl: 'https://example.com/video1',
+      githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
+      category: 'Web App',
+      year: '2024'
     },
     {
-        id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+      title: 'Task Management App',
+      description: 'Aplicación de gestión de tareas con funcionalidades avanzadas como colaboración en tiempo real y notificaciones.',
+      image: '/img/proyectos/calculadora-dkv.png',
+      videoUrl: 'https://example.com/video2',
+      githubUrl: 'https://github.com/claudia/task-manager',
+      category: 'Productivity',
+      year: '2024'
     },
     {
-        id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+      title: 'Weather Forecast App',
+      description: 'Aplicación del clima con diseño moderno, mapas interactivos y pronósticos detallados de múltiples ubicaciones.',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      videoUrl: 'https://example.com/video3',
+      githubUrl: 'https://github.com/claudia/weather-app',
+      category: 'Mobile App',
+      year: '2023'
     },
     {
-        id: 4,
-        title: "Navegando Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+      title: 'Social Media Platform',
+      description: 'Red social con feed en tiempo real, sistema de mensajería, notificaciones push y modo offline.',
+      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+      videoUrl: 'https://example.com/video4',
+      githubUrl: 'https://github.com/claudia/social-platform',
+      category: 'Social',
+      year: '2024'
     },
     {
-        id: 5,
-        title: "Sitios Web Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+      title: 'Learning Management System',
+      description: 'Plataforma educativa con cursos interactivos, sistema de calificaciones y panel de progreso estudiantil.',
+      image: 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=800',
+      videoUrl: 'https://example.com/video5',
+      githubUrl: 'https://github.com/claudia/lms-platform',
+      category: 'Education',
+      year: '2023'
     },
     {
-        id: 6,
-        title: "Proyectos Web Dinámicos",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
+      title: 'Portfolio Website',
+      description: 'Sitio web personal con animaciones avanzadas, modo oscuro/claro y optimización SEO completa.',
+      image: '/img/proyectos/portfolio.png',
+      videoUrl: 'https://example.com/video6',
+      githubUrl: 'https://github.com/claudia/portfolio',
+      category: 'Portfolio',
+      year: '2024'
+    }
 ];
 
 
 export const dataSkills = [
     {
-        id: 1,
-        url: "/icons/icon-html.png",
-        name: "HTML",
-        subtitle: "Experimentado",
-        value: 85,
+        title: 'Frontend Frameworks',
+        icon: <Code size={24} />,
+        skills: [
+        { name: 'React', level: 95, color: 'bg-blue-500' },
+        { name: 'Vue.js', level: 85, color: 'bg-green-500' },
+        { name: 'Angular', level: 75, color: 'bg-red-500' },
+        { name: 'Next.js', level: 90, color: 'bg-gray-700' }
+        ]
     },
     {
-        id: 2,
-        url: "/icons/icon-css.png",
-        name: "CSS",
-        subtitle: "Intermedio",
-        value: 85,
+        title: 'Lenguajes',
+        icon: <Zap size={24} />,
+        skills: [
+        { name: 'TypeScript', level: 90, color: 'bg-blue-600' },
+        { name: 'JavaScript', level: 95, color: 'bg-yellow-500' },
+        { name: 'HTML5', level: 98, color: 'bg-orange-500' },
+        { name: 'CSS3', level: 95, color: 'bg-blue-400' }
+        ]
     },
     {
-        id: 3,
-        url: "/icons/icon-js.png",
-        name: "JavaScript",
-        subtitle: "Experimentado",
-        value: 60,
+        title: 'Herramientas & Diseño',
+        icon: <Palette size={24} />,
+        skills: [
+        { name: 'Tailwind CSS', level: 92, color: 'bg-teal-500' },
+        { name: 'SASS/SCSS', level: 88, color: 'bg-pink-500' },
+        { name: 'Figma', level: 80, color: 'bg-purple-500' },
+        { name: 'Adobe XD', level: 75, color: 'bg-pink-600' }
+        ]
     },
     {
-        id: 4,
-        url: "/icons/icon-sass.png",
-        name: "Sass",
-        subtitle: "Experimentado",
-        value: 50,
-    },
-        {
-        id: 5,
-        url: "/icons/icon-php.png",
-        name: "PHP",
-        subtitle: "PHP",
-        value: 50,
+        title: 'Backend & APIs',
+        icon: <Database size={24} />,
+        skills: [
+        { name: 'REST APIs', level: 90, color: 'bg-green-500' },
+        { name: 'GraphQL', level: 80, color: 'bg-pink-500' },
+        { name: 'Node.js', level: 75, color: 'bg-green-600' },
+        { name: 'Firebase', level: 85, color: 'bg-orange-500' }
+        ]
     },
     {
-        id: 6,
-        url: "/icons/icon-typescript.png",
-        name: "Typescript",
-        subtitle: "Typescript",
-        value: 50,
+        title: 'DevOps & Tools',
+        icon: <Globe size={24} />,
+        skills: [
+        { name: 'Git', level: 92, color: 'bg-orange-600' },
+        { name: 'Webpack', level: 80, color: 'bg-blue-500' },
+        { name: 'Docker', level: 70, color: 'bg-blue-600' },
+        { name: 'AWS', level: 65, color: 'bg-yellow-600' }
+        ]
     },
     {
-        id: 7,
-        url: "/icons/icon-react.png",
-        name: "React",
-        subtitle: "Experimentado",
-        value: 60,
-    },
-        {
-        id: 8,
-        url: "/icons/icon-node.png",
-        name: "NodeJS",
-        subtitle: "Experimentado",
-        value: 60,
-    },
-    {
-        id: 9,
-        url: "/icons/icon-docker.png",
-        name: "Docker",
-        subtitle: "Experimentado",
-        value: 60,
-    },
-    {
-        id: 10,
-        url: "/icons/icon-vscode.png",
-        name: "Visual Studio Code",
-        subtitle: "Intermedio",
-        value: 80,
-    },
-        {
-        id: 11,
-        url: "/icons/icon-git.png",
-        name: "Git",
-        subtitle: "Experimentado",
-        value: 50,
-    },
-    {
-        id: 12,
-        url: "/icons/icon-figma.png",
-        name: "Figma",
-        subtitle: "Experimentado",
-        value: 30,
-    },
-    {
-        id: 13,
-        url: "/icons/icon-bootstrap.png",
-        name: "Bootstrap",
-        subtitle: "Basic",
-        value: 50,
-    },
-    {
-        id: 14,
-        url: "/icons/icon-tailwind.png",
-        name: "Tailwind",
-        subtitle: "Basic",
-        value: 50,
-    },
+        title: 'Mobile & Testing',
+        icon: <Smartphone size={24} />,
+        skills: [
+        { name: 'React Native', level: 80, color: 'bg-blue-500' },
+        { name: 'PWA', level: 85, color: 'bg-purple-500' },
+        { name: 'Jest', level: 78, color: 'bg-red-500' },
+        { name: 'Cypress', level: 72, color: 'bg-green-500' }
+        ]
+    }
 ];
 
 
 export const dataServices = [
     {
         id: 1,
-        title: "Clean code",
+        title: "Código Limpio",
         url: "/icons/codigo.png",
-        features: [
-            {
-                name: "Estructura clara, código comentado y organizado para que sea fácil de actualizar.",
-            },
-        ],
+        name: "Escribo código mantenible, bien documentado y siguiendo las mejores prácticas de desarrollo para facilitar la colaboración en equipo.",
     },
     {
         id: 2,
-        title: "Responsive design",
+        title: "Diseño Responsive",
         url: "/icons/movil.png",
-        features: [
-            {
-                name: "Diseño pensado desde el celular hacia arriba, para cubrir a todos los usuarios.",
-            },
-        ],
+        name: "Creo interfaces que se adaptan perfectamente a cualquier dispositivo, garantizando una experiencia óptima en móvil, tablet y desktop.",
     },
     {
         id: 3,
-        title: "Buenas prácticas de seguridad",
+        title: "Seguridad & Testing",
         url: "/icons/proteger.png",
-        features: [
-            {
-                name: "Manejo correcto de formularios, validación básica, HTTPS y CORS.",
-            },
-        ],
+        name: "Implemento medidas de seguridad frontend, validaciones robustas y testing automatizado para garantizar aplicaciones confiables.",
     },
         {
         id: 4,
         title: "Escalabilidad",
         url: "/icons/crecer.png",
-        features: [
-            {
-                name: "Desarrollo basado en componentes con React para que tu sitio escale fácilmente.",
-            },
-        ],
+        name: "Desarrollo aplicaciones con arquitecturas modulares y escalables que crecen con las necesidades del negocio a largo plazo.",
     },
         {
         id: 5,
-        title: "Integración de APIs",
+        title: "Conexión a APIs",
         url: "/icons/api.png",
-        features: [
-            {
-                name: "Mostrar datos externos",
-            },
-            {
-                name: "APIs públicas o privadas.",
-            },
-        ],
+        name: "Integro aplicaciones frontend con APIs REST y GraphQL, manejando estados complejos y sincronización de datos en tiempo real.",
     },
         {
         id: 6,
-        title: "Aprendizaje constante",
-        url: "/icons/cerebro.png",
-        features: [
-            {
-                name: "Siempre explorando nuevas herramientas y buenas prácticas del desarrollo web.",
-            },
-        ],
+        title: "Rendimiento Optimizado",
+        url: "/icons/rayo.png",
+        name: "Optimizo la velocidad de carga y la experiencia de usuario implementando técnicas avanzadas de performance y lazy loading.",
     },
 ];
 
@@ -355,51 +316,5 @@ export const dataContact = [
         subtitle: "email@email.com",
         link: "mailto:test@test.com",
         icon: <Inbox />,
-    },
-];
-
-
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile-1.jpeg",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile-2.jpeg",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile-3.jpeg",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile-3.jpeg",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile-2.jpeg",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile-3.jpeg",
     },
 ];

@@ -1,82 +1,82 @@
-.aboutSection {
+.experienceSection {
+    background-color: var(--background-lingth);
     padding: 6rem 0;
 }
 
-.aboutSection .aboutContainer {
+.experienceSection .cradsContainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    gap: 90px;
-    margin-top: 40px;
+    gap: 60px;
+    width: 80%;
+    margin: auto;
 }
 
-.aboutSection .aboutContainer .goalsContainer {
-    width: 30%;
+.experienceSection .cradsContainer .cardExperience {
+    display: flex;
+    gap: 26px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: var(--background-card);
+    border: 2px solid #e5e7eb;
+    width: 100%;
 }
 
-.aboutSection .aboutContainer .goalsContainer .goalsCards {
+.experienceSection .cradsContainer .cardExperience .imgCard .companyImg {
+    border-radius: 16px;
+    width: 76px;
+    height: 76px;
+}
+
+.experienceSection .cradsContainer .cardExperience .infocard {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.experienceSection .cradsContainer .cardExperience .infocard .topInfo {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.experienceSection .cradsContainer .cardExperience .infocard .topInfo .position {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.experienceSection .cradsContainer .cardExperience .infocard .topInfo .company {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2563EB;
+    margin: 0;
+}
+
+.experienceSection .cradsContainer .cardExperience .infocard .description {
+    font-size: 18px;
+    margin: 0 0 24px 0;
+    color: #4B5563;
+    text-align: left;
+    width: 100%;
+}
+
+.experienceSection .cradsContainer .cardExperience .infocard .technologies {
+    display: flex;
+    justify-content: flex-start;
     gap: 12px;
 }
 
-.aboutSection .aboutContainer .goalsContainer .goalsCards .card {
-    padding: 10px;
-    width: 100%;
-    height: fit-content;
-    border: 1px solid var(--foreground);
-}
-
-.aboutSection .aboutContainer .goalsContainer button{
-    min-width: 100%;
-    margin-top: 22px;
-}
-
-.aboutSection .aboutContainer .experienceContainer {
-    max-width: 33%;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences {
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences .experienceItem {
-  margin-bottom: 2rem;
-  display: flex;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences .lineRoute {
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-right: 16px;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences .lineRoute .line {
-  flex: 1;
-  width: 2px;
-  background-color: var(--foreground);
-  margin-top: 4px;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences .lineRoute .dot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--foreground);
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences .content .title {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.aboutSection .aboutContainer .experienceContainer .experiences .content .text {
-    font-size: 16px;
-    font-weight: 400;
+.experienceSection .cradsContainer .cardExperience .infocard .technologies .tech {
+    padding: 4px 12px;
+    background-color: #FFEDD5;
+    border: 1px solid #c2400c3a;
+    color: #C2410C;
+    font-size: 14px;
+    border-radius: 50px;
 }

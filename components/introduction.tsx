@@ -4,8 +4,10 @@ import Conatiner from "./shared/container";
 import { Mail, Paperclip } from "lucide-react";
 
 import "../components/styles/introduction.css"
+import "../components/styles/buttons.css"
 
 const Introduction = () => {
+
     return(
         <div className="banner-central" id="home">
             <div className="container bannerContainer">
@@ -14,22 +16,19 @@ const Introduction = () => {
                         <h3 className="hello">Frontend Developer</h3>
                         <h1 className="name">Claudia Díez</h1>
                         <div className="btnsContainer">
-                            <Link className="button button--default button--default-size" href="#contact">
+                            <Link className="button button-primary" href="#contact">
                                 <Mail className="mr-2" /> Contacta conmigo
                             </Link>
 
-                            <Link className="button button--secondary button--default-size" href="/cv-claudia.pdf" target="_blank">
+                            <Link className="button button-secondary" href="/cv-claudia.pdf" target="_blank">
                                 <Paperclip className="mr-2" /> Descargar cv
                             </Link>
                         </div>
                     </div>
                     <div className="imgContainer">
-                        <Image src="/img-portada.png" alt="Profile pic" className="img-portada" width={300} height={400}/>
-                        <div className="rrssContainer">
-
-                        </div>
+                        <Image src="/img/portada-img.png" alt="Profile pic" className="img-portada" width={360} height={500}/>
                     </div>
-                </div>
+                </div> 
 
                 <section className="linea-franja"><div className="linea"></div></section>
 

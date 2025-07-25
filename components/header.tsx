@@ -1,14 +1,20 @@
+'use client'
+
 import { itemsNavbar } from "@/data"
 import Image from "next/image"
 import { ToggleTheme } from "./toggle-theme"
 import Link from "next/link"
+import { useTheme } from "next-themes"
+import { LogoImage } from "./ui/logo-img"
+
 import "../components/styles/header.css"
 
 const Header = () => {
+
   return (
     <header className="headerSection" id="header">
       <div className="container headerContainer">
-        <Image src="/icons/logo.svg" alt="logo" className="logo-header" width={100} height={60}/>
+        <LogoImage />
 
         <nav className="z-20">
           <div className="nav">
@@ -20,9 +26,10 @@ const Header = () => {
                 </Link>
               </div>
             ))}
-            <ToggleTheme />
           </div>
         </nav>
+
+        <ToggleTheme />
       </div>
     </header>
   )

@@ -13,9 +13,9 @@
 .servicesSection .servicesContainer .servicesCard {
     width: auto;
     min-height: 200px;
-    border: 1px solid var(--color-card-background);
-    background-color: var(--color-card-background);
-    border-radius: 6px;
+    border: 2px solid #e5e7eb;
+    background-color: var(--background-card);
+    border-radius: 12px;
     padding: 20px;
 }
 

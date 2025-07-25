@@ -4,7 +4,6 @@ import Introduction from "@/components/introduction"
 import AboutMe from "@/components/about-me";
 import Services from "@/components/services";
 import Portfolio from "@/components/portfolio";
-import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -23,8 +22,7 @@ export default function Home() {
       <Skills />
       <Services />
       <Portfolio />
-      {/* <Testimonials /> */}
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
     </main>
   );

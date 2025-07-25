@@ -1,6 +1,6 @@
 .headerSection {
-    background-color: var(--background);
-    border-bottom: 2px solid var(--accent);
+    background-color: var(--background-lingth);
+    border-bottom: 2px solid #e5e7eb;
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -35,7 +35,7 @@
     padding: 3px 2px;
     font-size: 18px;
     color: var(--foreground);
-    border-bottom: 1px solid var(--background);
+    border-bottom: 1px solid var(--background-lingth);
     text-decoration: none !important;
 }
 
@@ -47,17 +47,17 @@
     min-width: unset;
 }
 
-.headerSection .headerContainer .nav .toggleContainer {
+.headerSection .headerContainer .toggleContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
 }
 
-.headerSection .headerContainer .nav .toggleBtn {
+.headerSection .headerContainer .toggleBtn {
     display: flex;
     justify-content: center;
-    background-color: var(--background);
+    background-color: var(--background-lingth);
     border: 1px solid var(--accent);
     border-radius: 6px;
     padding: 6px;

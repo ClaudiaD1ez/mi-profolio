@@ -1,15 +1,19 @@
 
 :root {
   --radius: 6px;
-  --background: #F2F2F2;
+  --background-lingth: #ffff;
+  --background-dark: #eff6ff;
+  --background-card: #F9FAFB;
+  --banner-background: #eff6ff;
   --foreground: #252D59;
   --text: #252D59;
 
   --card-background: #ffffff;
   --card-foreground: #252D59;
 
-  --accent: #F28F38;
+  --accent: #f97316;
   --accent-hover: #cc5e04;
+  --accent-blue: #4646d1;
   --accent-foreground: #252D59;
 
   --text-buttons: #F2F2F2;
@@ -22,14 +26,18 @@
 /* === DARK MODE VARIABLES === */
 .dark {
   --background: #191e29;
+  --background-lingth: #191e29;
+  --background-dark: #191e29;
+  --banner-background: #191e29;
   --foreground: #F2F2F2;
   --text: #F2F2F2;
 
   --card-background: #292929;
   --card-foreground: #F2F2F2;
 
-  --accent: #F27830;
-  --accent-hover: #F28F38;
+  --accent: #f97316;
+  --accent-hover: #f97316;
+  --accent-blue: #4646d1;
   --accent-foreground: #F2F2F2;
 
   --text-buttons: #252D59;
@@ -41,7 +49,7 @@
   --sidebar-accent-foreground: #F2F2F2;
   --secondary-foreground: #F2F2F2;
 
-  --franja-background: #F27830;
+  --franja-background: #f97316;
 }
 
 /* === BASE STYLES === */
@@ -91,6 +99,7 @@ html, body {
   align-items: center;
   gap: 3px;
   text-align: center;
+  margin-bottom: 60px;
 }
 .titleContainer .title{
   font-size: 26px;

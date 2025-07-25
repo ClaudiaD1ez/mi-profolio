@@ -4,6 +4,7 @@
   justify-content: center;
   gap: 3px;
   white-space: nowrap;
+  padding: 6px 12px;
   border-radius: 6px;
   font-size: 18px;
   font-weight: 500;
@@ -25,7 +26,7 @@
 
 /* === Variants === */
 
-.button--default {
+.button-primary {
   background-color: var(--accent); /* bg-primary */
   border: 1px solid var(--accent);
   color: var(--text-buttons); /* text-primary-foreground */
@@ -33,33 +34,12 @@
   text-decoration: none;
 }
 
-.button--default:hover {
+.button-primary:hover {
   background-color: var(--accent-hover); /* hover:bg-primary/90 */
+  border: 1px solid var(--accent-hover);
 }
 
-.button--destructive {
-  background-color: #ef4444; /* bg-destructive */
-  color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.button--destructive:hover {
-  background-color: #dc2626; /* hover:bg-destructive/90 */
-}
-
-.button--outline {
-  background-color: white;
-  color: black;
-  border: 1px solid #e5e7eb; /* bg-background + border */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.button--outline:hover {
-  background-color: #f3f4f6; /* hover:bg-accent */
-  color: #111827; /* hover:text-accent-foreground */
-}
-
-.button--secondary {
+.button-secondary {
   background-color: none; /* bg-secondary */
   color: var(--accent); /* text-secondary-foreground */
   border: 1px solid var(--accent);
@@ -67,9 +47,31 @@
   text-decoration: none;
 }
 
-.button--secondary:hover {
+.button-secondary:hover {
   border: 1px solid var(--accent-hover);
   color: var(--accent-hover);
+}
+
+.button-destructive {
+  background-color: #ef4444; /* bg-destructive */
+  color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button-destructive:hover {
+  background-color: #dc2626; /* hover:bg-destructive/90 */
+}
+
+.button-outline {
+  background-color: white;
+  color: black;
+  border: 1px solid #e5e7eb; /* bg-background + border */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button-outline:hover {
+  background-color: #f3f4f6; /* hover:bg-accent */
+  color: #111827; /* hover:text-accent-foreground */
 }
 
 .button--ghost {
@@ -95,7 +97,7 @@
 
 /* === Sizes === */
 
-.button--default-size {
+.button-primary-size {
   height: 2.25rem; /* h-9 */
   padding: 6px 12px;
 }
