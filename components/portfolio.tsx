@@ -14,44 +14,40 @@ const Portfolio = () => {
 
                     <div className="cardsContainer">
                         {dataPortfolio.map((project, index) => (
-                            <div key={index} className="cardProyect" >
-                                {/* Image Container */}
-                                <div className="cardImg">
-                                    <div className="overlay-darken"></div>
-                                    <img src={project.image} alt={project.title} className="img" />
-                                    
-                                    <div className=""></div>
-                                    
+                            <div className="cardProyect" key={project.id} style={{ backgroundImage: `url(${project.image})` }}>
+                                <div className="overlay-darken"></div>
+                                <div className="backgroundFilter"></div>
+
+                                {/* Título fijo abajo */}
+                                <div className="cardTitleOverlay">
+                                    <h3 className="title">{project.title}</h3>
+                                </div>
+
+                                {/* Hover content */}
+                                <div className="hoverSection">
+                                    <div className="hoverContainer">
                                     <div className="manchetaCategory">
-                                        <span className="text"> {project.category} </span>
+                                        <span className="text">{project.category}</span>
                                     </div>
 
                                     <div className="manchetaYear">
-                                        <span className="text"> {project.year} </span>
+                                        <span className="text">{project.year}</span>
                                     </div>
 
-                                </div>
-
-                                {/* Content */}
-                                <div className="cardInfo">
-                                    <h3 className="title"> {project.title} </h3>
-                                </div>
-
-                                <div className="hoverSection">
-                                    <p className="description"> {project.description} </p>
+                                    <p className="description">{project.description}</p>
 
                                     <div className="hoverButtons">
-                                        <a href={project.videoUrl} target="_blank" rel="noopener noreferrer" className="button btn-demo button-primary">
-                                            <Play size={18} />
-                                            <span>Ver Demo</span>
+                                        <a href={project.videoUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary btn-demo">
+                                        <Play size={18} />
+                                        <span>Ver Demo</span>
                                         </a>
-                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="button btn-code button-primary">
-                                            <Github size={18} />
-                                            <span>Ver Código</span>
+                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary btn-code">
+                                        <Github size={18} />
+                                        <span>Ver Código</span>
                                         </a>
                                     </div>
+                                    </div>
                                 </div>
-
                             </div>
                         ))}
                     </div>
@@ -59,7 +55,7 @@ const Portfolio = () => {
                     {/* Call to Action */}
                     <div className="moreContainer">
                         <p className="text"> ¿Interesado en ver más proyectos o colaborar? </p>
-                        <button className="btnMore"> Ver Todos los Proyectos </button>
+                        <button className="button button-primary btnMore"> Ver Todos los Proyectos </button>
                     </div>
                 </div>
             </div>

@@ -19,9 +19,9 @@ export default function Home() {
       <Introduction/>
       <Franja/>
       <AboutMe/>
+      <Portfolio />
       <Skills />
       <Services />
-      <Portfolio />
       {/* <Contact/> */}
       <Footer/>
     </main>

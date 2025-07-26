@@ -20,13 +20,13 @@ const Introduction = () => {
                                 <Mail className="mr-2" /> Contacta conmigo
                             </Link>
 
-                            <Link className="button button-secondary" href="/cv-claudia.pdf" target="_blank">
+                            <Link className="button button-contrast" href="/cv-claudia.pdf" target="_blank">
                                 <Paperclip className="mr-2" /> Descargar cv
                             </Link>
                         </div>
                     </div>
                     <div className="imgContainer">
-                        <Image src="/img/portada-img.png" alt="Profile pic" className="img-portada" width={360} height={500}/>
+                        <Image src="/img/portada-img.png" alt="Profile pic" className="img-portada" width={300} height={430}/>
                     </div>
                 </div> 
 

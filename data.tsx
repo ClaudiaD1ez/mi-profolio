@@ -1,4 +1,4 @@
-import { BellPlus, BookText, Briefcase, Brush, Code, Code2, CodeSquare, Database, Globe, Home, Inbox, Mail, Palette, PanelsTopLeft, Phone, Smartphone, UserRound, UsersRound, Wrench, Zap } from "lucide-react";
+import { BookText, Briefcase, Brush, Code, Code2, CodeSquare, Database, Globe, Home, Inbox, Mail, Palette, Phone, Smartphone, UserRound, UsersRound, Wrench, Zap } from "lucide-react";
 
 
 export const itemsNavbar = [
@@ -12,19 +12,19 @@ export const itemsNavbar = [
         id: 2,
         title: "About Me",
         icon: <UserRound size={20} />,
-        link: "#about-me",
+        link: "#experience",
     },
-    {
+        {
         id: 3,
-        title: "Skills",
-        icon: <BookText size={20} />,
-        link: "#services",
+        title: "Proyectos",
+        icon: <CodeSquare size={20} />,
+        link: "#projects",
     },
     {
         id: 4,
-        title: "Proyectos",
-        icon: <CodeSquare size={20} />,
-        link: "#portfolio",
+        title: "Skills",
+        icon: <BookText size={20} />,
+        link: "#skills",
     },
     {
         id: 5,
@@ -135,58 +135,64 @@ export const dataSlider = [
 
 export const dataPortfolio = [
      {
-      title: 'E-Commerce Dashboard',
-      description: 'Panel de administración completo para tienda online con gestión de productos, pedidos y análisis en tiempo real.',
-      image: '/img/proyectos/landing-jazztel.png',
-      videoUrl: 'https://example.com/video1',
-      githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
-      category: 'Web App',
-      year: '2024'
+        id: 1,
+        title: 'Landing de Jazztel',
+        description: 'Panel de administración completo para tienda online con gestión de productos, pedidos y análisis en tiempo real.',
+        image: '/img/proyectos/landing-jazztel.png',
+        videoUrl: 'https://example.com/video1',
+        githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
+        category: 'Web App',
+        year: '2024'
     },
     {
-      title: 'Task Management App',
-      description: 'Aplicación de gestión de tareas con funcionalidades avanzadas como colaboración en tiempo real y notificaciones.',
-      image: '/img/proyectos/calculadora-dkv.png',
-      videoUrl: 'https://example.com/video2',
-      githubUrl: 'https://github.com/claudia/task-manager',
-      category: 'Productivity',
-      year: '2024'
+        id: 2,
+        title: 'Weather Forecast App',
+        description: 'Aplicación del clima con diseño moderno, mapas interactivos y pronósticos detallados de múltiples ubicaciones.',
+        image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+        videoUrl: 'https://example.com/video3',
+        githubUrl: 'https://github.com/claudia/weather-app',
+        category: 'Mobile App',
+        year: '2023'
     },
     {
-      title: 'Weather Forecast App',
-      description: 'Aplicación del clima con diseño moderno, mapas interactivos y pronósticos detallados de múltiples ubicaciones.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      videoUrl: 'https://example.com/video3',
-      githubUrl: 'https://github.com/claudia/weather-app',
-      category: 'Mobile App',
-      year: '2023'
+        id: 3,
+        title: 'Calculadora / Tarificador - DKV',
+        description: 'Aplicación de gestión de tareas con funcionalidades avanzadas como colaboración en tiempo real y notificaciones.',
+        image: '/img/proyectos/calculadora-dkv.png',
+        videoUrl: 'https://example.com/video2',
+        githubUrl: 'https://github.com/claudia/task-manager',
+        category: 'Productivity',
+        year: '2024'
     },
     {
-      title: 'Social Media Platform',
-      description: 'Red social con feed en tiempo real, sistema de mensajería, notificaciones push y modo offline.',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-      videoUrl: 'https://example.com/video4',
-      githubUrl: 'https://github.com/claudia/social-platform',
-      category: 'Social',
-      year: '2024'
+        id: 4,
+        title: 'Social Media Platform',
+        description: 'Red social con feed en tiempo real, sistema de mensajería, notificaciones push y modo offline.',
+        image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+        videoUrl: 'https://example.com/video4',
+        githubUrl: 'https://github.com/claudia/social-platform',
+        category: 'Social',
+        year: '2024'
     },
     {
-      title: 'Learning Management System',
-      description: 'Plataforma educativa con cursos interactivos, sistema de calificaciones y panel de progreso estudiantil.',
-      image: 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=800',
-      videoUrl: 'https://example.com/video5',
-      githubUrl: 'https://github.com/claudia/lms-platform',
-      category: 'Education',
-      year: '2023'
+        id: 5,
+        title: 'Learning Management System',
+        description: 'Plataforma educativa con cursos interactivos, sistema de calificaciones y panel de progreso estudiantil.',
+        image: 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=800',
+        videoUrl: 'https://example.com/video5',
+        githubUrl: 'https://github.com/claudia/lms-platform',
+        category: 'Education',
+        year: '2023'
     },
     {
-      title: 'Portfolio Website',
-      description: 'Sitio web personal con animaciones avanzadas, modo oscuro/claro y optimización SEO completa.',
-      image: '/img/proyectos/portfolio.png',
-      videoUrl: 'https://example.com/video6',
-      githubUrl: 'https://github.com/claudia/portfolio',
-      category: 'Portfolio',
-      year: '2024'
+        id: 6,
+        title: 'Portfolio Website',
+        description: 'Sitio web personal con animaciones avanzadas, modo oscuro/claro y optimización SEO completa.',
+        image: '/img/proyectos/portfolio.png',
+        videoUrl: 'https://example.com/video6',
+        githubUrl: 'https://github.com/claudia/portfolio',
+        category: 'Portfolio',
+        year: '2024'
     }
 ];
 
