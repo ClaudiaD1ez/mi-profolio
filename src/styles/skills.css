@@ -1,0 +1,270 @@
+/* Skills Radar Styles */
+.skills-radar-section {
+  padding: 5rem 0;
+  background: var(--background-lingth);
+}
+
+.skills-radar-container {
+  max-width: 1792px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.skills-radar-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skills-radar-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.skills-radar-title-accent {
+  color: #f97316;
+}
+
+.skills-radar-subtitle {
+  color: #64748b;
+  font-size: 1.125rem;
+}
+
+.skills-radar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Left Column - Skills Card */
+.skills-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 12px;
+  background-color: var(--background-card);
+  border: 2px solid var(--card-foreground);
+}
+
+.skills-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.skill-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-name {
+  font-size: 14px;
+  color: var(--text);
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+.skill-level-indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+
+.skills-legend {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--card-foreground);
+}
+
+.legend-title {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.legend-items {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.legend-label {
+  font-size: 0.75rem;
+  color: var(--text);
+}
+
+/* Right Column */
+.radar-controls-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.filters-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .filters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.filter-button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+}
+
+.filter-button.active {
+  background-color: #f97316;
+  color: white;
+}
+
+.filter-button:not(.active) {
+  background-color: var(--background-card);
+}
+
+.filter-button:not(.active):hover {
+  color: #f97316;
+}
+
+.filter-count {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+/* Radar Chart */
+.radar-chart-container {
+  position: relative;
+}
+
+.radar-canvas {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.radar-tooltip {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.radar-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #1e293b;
+}
+
+.tooltip-name {
+  font-weight: 500;
+}
+
+.tooltip-level {
+  font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-radar-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .skills-radar-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-radar-container {
+    padding: 0 1rem;
+  }
+  
+  .skills-card,
+  .radar-chart-container {
+    padding: 1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .legend-items {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

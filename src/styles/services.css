@@ -1,0 +1,54 @@
+.servicesSection {
+    padding: 6rem 0;
+    background: var(--background-dark);
+}
+
+.servicesSection .servicesContainer {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.75rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, auto);   /* 2 filas */
+}
+
+.servicesSection .servicesContainer .servicesCard {
+    width: auto;
+    min-height: 200px;
+    border: 2px solid var(--card-foreground);
+    background-color: var(--card-background-ligth);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.servicesSection .servicesContainer .servicesCard img {
+   filter: brightness(0) saturate(100%) invert(47%) sepia(58%) saturate(2573%) hue-rotate(2deg) brightness(105%) contrast(104%);
+}
+
+.servicesSection .servicesContainer .servicesCard .servidesTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.servicesSection .servicesContainer .servicesCard .puntos {
+    display: flex;
+    gap: 3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.servicesSection .servicesContainer .servicesCard svg {
+    min-width: 14px;
+    min-height: 14px;
+}
+
+
+@media (min-width: 768px) {
+  .servicesContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

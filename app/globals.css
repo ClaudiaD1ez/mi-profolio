@@ -1,15 +1,24 @@
 
 :root {
   --radius: 6px;
+  --banner-background: #eff6ff;
   --background-lingth: #ffff;
   --background-dark: #eff6ff;
   --background-card: #F9FAFB;
-  --banner-background: #eff6ff;
   --foreground: #252D59;
   --text: #252D59;
 
-  --card-background: #ffffff;
-  --card-foreground: #252D59;
+  --card-background-ligth: #ffffff;
+  --card-background-dark: #ffffff;
+  --card-foreground: #e5e7eb;
+
+  --tech-background: #FFEDD5;
+  --tech-text: #C2410C;
+  --tech-border: #c2400c3a;
+
+  --proyectos-card: linear-gradient(#0000004d 0%, #00000045 40%, #000000e3 100%);
+  --proyectos-card-text: #F2F2F2;
+  --proyectos-overlay: #000000b5;
 
   --accent: #f97316;
   --accent-hover: #cc5e04;
@@ -26,14 +35,24 @@
 /* === DARK MODE VARIABLES === */
 .dark {
   --background: #191e29;
-  --background-lingth: #191e29;
-  --background-dark: #191e29;
   --banner-background: #191e29;
+  --background-lingth: #1f2937;
+  --background-dark: #191e29;
+  --background-card: #191e29;
   --foreground: #F2F2F2;
   --text: #F2F2F2;
 
-  --card-background: #292929;
-  --card-foreground: #F2F2F2;
+  --card-background-ligth: #1f2937;
+  --card-background-dark: #292929;
+  --card-foreground: #374151;
+
+  --tech-background: #c2400c3a;
+  --tech-text: #cdb698;
+  --tech-border: #96492acf;
+
+  --proyectos-card: linear-gradient(#0000004d 0%, #00000045 40%, #cececee3 100%);
+  --proyectos-card-text: #252D59;
+  --proyectos-overlay: #fffefebe;
 
   --accent: #f97316;
   --accent-hover: #f97316;

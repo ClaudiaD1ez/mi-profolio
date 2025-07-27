@@ -1,0 +1,105 @@
+.proyectSection {
+    padding: 6rem 0;
+    background-color: var(--background-dark);
+}
+
+.proyectSection .cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    flex-wrap: wrap;
+}
+
+.proyectSection .cardsContainer .cardProyect {
+  position: relative;
+  width: 30%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.backgroundFilter {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--proyectos-card);
+}
+
+/* Oscurecer al hacer hover */
+.proyectSection .cardsContainer .cardProyect .overlay-darken {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.proyectSection .cardsContainer .cardProyect:hover .overlay-darken {
+  background-color: var(--proyectos-overlay);
+}
+
+/* Título abajo siempre visible */
+.proyectSection .cardsContainer .cardProyect .cardTitleOverlay {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.proyectSection .cardsContainer .cardProyect .cardTitleOverlay .title {
+  color: var(--proyectos-card-text);
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Hover content */
+.proyectSection .cardsContainer .cardProyect .hoverSection {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 3;
+}
+
+.proyectSection .cardsContainer .cardProyect:hover .hoverSection {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.proyectSection .cardsContainer .cardProyect .hoverSection .hoverContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 22px;
+  color: var(--proyectos-card-text);
+  text-align: center;
+}
+
+.proyectSection .cardsContainer .cardProyect .hoverSection .hoverContainer .hoverButtons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.proyectSection .proyectContainer .moreContainer {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectSection .proyectContainer .moreContainer .text {
+    font-size: 20px;
+    text-align: center;
+}

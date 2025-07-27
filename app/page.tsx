@@ -1,14 +1,13 @@
-import Navbar from "@/components/navbar";
-import Introduction from "@/components/introduction"
+import Navbar from "@/src/components/navbar";
+import Introduction from "@/src/components/introduction"
 // import Image from "next/image";
-import AboutMe from "@/components/about-me";
-import Services from "@/components/services";
-import Portfolio from "@/components/portfolio";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Franja from "@/components/franja";
-import Skills from "@/components/skills";
+import AboutMe from "@/src/components/about-me";
+import Services from "@/src/components/services";
+import Portfolio from "@/src/components/portfolio";
+import Footer from "@/src/components/footer";
+import Header from "@/src/components/header";
+import Franja from "@/src/components/franja";
+import Skills from "@/src/components/skills";
 
 
 export default function Home() {

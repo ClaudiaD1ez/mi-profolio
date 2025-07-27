@@ -1,0 +1,75 @@
+.footerSection {
+    background-color: var(--background-lingth);
+    border-top: 2px solid var(--card-foreground);
+}
+
+.footerSection .footerContainer .mainInfoFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerInfo .infoContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerInfo .infoContacto .dato {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerInfo .infoContacto .dato p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0 16px;
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerInfo .footerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerInfo .footerNav .footerLinks {
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--background-lingth);
+}
+
+.footerSection .footerContainer .mainInfoFooter .footerInfo .footerNav .footerLinks:hover {
+    border-bottom: 1px solid var(--accent);
+}
+
+.footerSection .footerContainer .mainInfoFooter .socialFooter .footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.footerSection .footerContainer .mainInfoFooter .socialFooter .footerIcons .footerImg {
+    background-color: #eff6ff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footerSection .footerContainer .finalFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid var(--card-foreground);
+}
+
+.footerSection .footerContainer .finalFooter .heart {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(33%) saturate(4107%) hue-rotate(353deg) brightness(104%) contrast(95%);
+}
