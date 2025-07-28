@@ -2,7 +2,7 @@ import { dataAboutExperience } from "@/src/data";
 import { Calendar, MapPin } from 'lucide-react';
 import Title from "./shared/title";
 
-import "../styles/aboutMe.css"
+import "../styles/aboutMe.scss"
 
 const AboutMe = () => {
     return(
@@ -11,7 +11,7 @@ const AboutMe = () => {
                 <div className="experienceContainer">
                     <Title title="Experiencia Profesional" subtitle="Trabajos recientes" />
 
-                    <div className="cradsContainer">
+                    <div className="cardsContainer">
                         {dataAboutExperience.map((exp, index) => (
                             <div className="cardExperience" key={exp.id}>
                                 <div className="imgCard">

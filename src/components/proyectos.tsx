@@ -2,10 +2,10 @@ import { dataPortfolio } from "@/src/data";
 import Title from "./shared/title";
 import { ArrowRight, Github, Play } from "lucide-react";
 
-import "../styles/portfolio.css"
-import "../styles/buttons.css"
+import "../styles/proyectos.scss"
+import "../styles/buttons.scss"
 
-const Portfolio = () => {
+const Proyectos = () => {
     return(
         <section id="projects" className="proyectSection">
             <div className="container">
@@ -63,4 +63,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Proyectos;

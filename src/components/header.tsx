@@ -7,7 +7,7 @@ import Link from "next/link"
 import { useTheme } from "next-themes"
 import { LogoImage } from "./ui/logo-img"
 
-import "../styles/header.css"
+import "../styles/header.scss"
 
 const Header = () => {
 

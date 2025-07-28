@@ -1,0 +1,58 @@
+.headerSection {
+  background-color: var(--background-lingth);
+  border-bottom: 2px solid var(--card-foreground);
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 22px;
+      padding: 4px;
+
+      .options {
+        transition: all 150ms ease;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          cursor: pointer;
+          padding: 3px 2px;
+          font-size: 18px;
+          color: var(--foreground);
+          border-bottom: 1px solid var(--background-lingth);
+          text-decoration: none !important;
+
+          &:hover {
+            border-bottom: 1px solid var(--accent);
+          }
+        }
+      }
+
+      .btn {
+        min-width: unset;
+      }
+    }
+    
+    .toggleBtn {
+        display: flex;
+        justify-content: center;
+        background-color: var(--background-lingth);
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        padding: 6px;
+        cursor: pointer;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { dataRRSS } from "@/src/data";
 import Link from "next/link";
-import "../styles/franja.css"
+import "../styles/franja.scss"
 import Image from "next/image";
 
 const Franja = () => {

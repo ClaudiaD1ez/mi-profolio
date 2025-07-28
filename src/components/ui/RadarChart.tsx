@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Skill } from "@/src/data";
 import { useRadarChart } from '../../hooks/useRadarChart';
 import { getLevelLabel } from '../../utils/skillsUtils';
+import { useTheme } from 'next-themes';
 
 // import '../styles/skillsRadar.css';
 
@@ -11,13 +12,17 @@ interface RadarChartProps {
 
 export const RadarChart: React.FC<RadarChartProps> = ({ skills }) => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
-  const { canvasRef, skillsWithAngles } = useRadarChart({ 
-    skills, 
-    hoveredSkill 
+  const { resolvedTheme } = useTheme();
+  const labelColor = resolvedTheme === 'dark' ? '#F2F2F2' : '#252D59';
+
+  const { canvasRef, skillsWithAngles } = useRadarChart({
+    skills,
+    hoveredSkill,
+    labelColor
   });
 
   return (
-    <div className="radar-chart-container">
+    <div className="radarchartContainer">
       <div style={{ position: 'relative' }}>
         <canvas
           ref={canvasRef}
@@ -25,18 +30,6 @@ export const RadarChart: React.FC<RadarChartProps> = ({ skills }) => {
           height={550}
           className="radar-canvas"
         />
-        
-        {/* Tooltip */}
-        {hoveredSkill && (
-          <div className="radar-tooltip">
-            <div className="tooltip-name">
-              {skillsWithAngles.find(s => s.name === hoveredSkill)?.name}
-            </div>
-            <div className="tooltip-level">
-              {getLevelLabel(skillsWithAngles.find(s => s.name === hoveredSkill)?.level || 0)}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

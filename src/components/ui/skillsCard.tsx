@@ -5,21 +5,19 @@ import { allSkills, skillLevels } from "@/src/data";
 
 export const SkillsCard: React.FC = () => {
   return (
-    <div className="skills-card">
+    <div className="skillsCard">
 
-      <div className="skills-grid">
+      <div className="logosContainer">
         {allSkills.map((skill) => (
-          <div key={skill.name} className="skill-item">
-            <div className="skill-logo">
-              <img src={skill.logo} alt={skill.name} width={40} height={40} className="franjaImg" />
-              <p className='skill-name'>{skill.name}</p>
-            </div>
+          <div key={skill.name} className="skillLogo">
+              <img src={skill.logo} alt={skill.name} width={40} height={40} className="skillImg" />
+              <p className='skillName'>{skill.name}</p>
           </div>
         ))}
       </div>
 
       {/* Leyenda */}
-      <div className="skills-legend">
+      <div className="levelLegend">
         <div className="legend-title">Nivel de Dominio</div>
         <div className="legend-items">
           <div className="legend-item">

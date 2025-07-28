@@ -1,9 +1,8 @@
 import Navbar from "@/src/components/navbar";
-import Introduction from "@/src/components/introduction"
-// import Image from "next/image";
+import Banner from "@/src/components/banner"
 import AboutMe from "@/src/components/about-me";
 import Services from "@/src/components/services";
-import Portfolio from "@/src/components/portfolio";
+import Proyectos from "@/src/components/proyectos";
 import Footer from "@/src/components/footer";
 import Header from "@/src/components/header";
 import Franja from "@/src/components/franja";
@@ -15,13 +14,12 @@ export default function Home() {
     <main className="bodyContainer">
       <Header/>
       {/* <Navbar/> */}
-      <Introduction/>
+      <Banner/>
       <Franja/>
       <AboutMe/>
-      <Portfolio />
+      <Proyectos />
       <Skills />
       <Services />
-      {/* <Contact/> */}
       <Footer/>
     </main>
   );

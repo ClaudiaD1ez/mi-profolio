@@ -3,10 +3,10 @@ import Image from "next/image";
 import Conatiner from "./shared/container";
 import { Mail, Paperclip } from "lucide-react";
 
-import "../styles/introduction.css"
-import "../styles/buttons.css"
+import "../styles/banner.scss"
+import "../styles/buttons.scss"
 
-const Introduction = () => {
+const Banner = () => {
 
     return(
         <div className="banner-central" id="home">
@@ -47,4 +47,4 @@ const Introduction = () => {
     );
 }
 
-export default Introduction;
+export default Banner;

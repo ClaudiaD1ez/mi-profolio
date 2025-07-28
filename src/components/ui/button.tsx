@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cn } from "@/lib/utils"
-import "../styles/buttons.css"
+import "../styles/buttons.scss"
 
 const getButtonClass = (
   variant: string = "default",

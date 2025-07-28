@@ -1,5 +1,5 @@
 import { Heart , Mail, MapPin, Phone } from "lucide-react";
-import "../styles/footer.css"
+import "../styles/footer.scss"
 import { dataRRSS } from "@/src/data";
 import Link from "next/link";
 import Image from "next/image";

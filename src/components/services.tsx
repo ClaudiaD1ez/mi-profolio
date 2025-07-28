@@ -1,7 +1,7 @@
 import { dataServices } from "@/src/data";
 import Title from "./shared/title";
 import Image from "next/image";
-import "../styles/services.css"
+import "../styles/services.scss"
 
 const Services = () => {
     return(

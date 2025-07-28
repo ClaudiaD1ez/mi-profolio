@@ -8,7 +8,7 @@ import { CategoryFilters } from '../components/ui/CategoryFilters';
 import { RadarChart } from '../components/ui/RadarChart';
 import { allSkills } from '../data';
 
-import '../styles/skills.css';
+import '../styles/skills.scss';
 import Title from './shared/title';
 
 const Skills = () => {
@@ -17,17 +17,17 @@ const Skills = () => {
   const filteredSkills = filterSkillsByCategory(allSkills, selectedCategory);
 
   return (
-    <section className="skills-radar-section" id='skills'>
+    <section className="skillSection" id='skills'>
       <div className='container'>
-        <div className="skills-radar-container">
+        <div className="skillContainer">
           <Title title="Skills" subtitle="Herramientas y tecnologías" />
 
-          <div className="skills-radar-grid">
+          <div className="mainContainer">
             {/* Columna Izquierda - Card con todos los logos */}
             <SkillsCard />
 
             {/* Columna Derecha - Selectores y Radar */}
-            <div className="radar-controls-container">
+            <div className="skillFilterContainer">
               {/* Filtros */}
               <CategoryFilters 
                 selectedCategory={selectedCategory}

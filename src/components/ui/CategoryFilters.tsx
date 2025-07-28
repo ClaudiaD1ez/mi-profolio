@@ -14,25 +14,23 @@ export const CategoryFilters: React.FC<CategoryFiltersProps> = ({
   onCategoryChange
 }) => {
   return (
-    <div className="category-filters">
-      <div className="filters-grid">
-        {categories.map((category) => {
-          const skillCount = filterSkillsByCategory(allSkills, category).length;
-          
-          return (
-            <button
-              key={category}
-              onClick={() => onCategoryChange(category)}
-              className={`filter-button ${selectedCategory === category ? 'active' : ''}`}
-            >
-              {category}
-              <span className="filter-count">
-                {skillCount}
-              </span>
-            </button>
-          );
-        })}
-      </div>
+    <div className="filtersContainer">
+      {categories.map((category) => {
+        const skillCount = filterSkillsByCategory(allSkills, category).length;
+        
+        return (
+          <button
+            key={category}
+            onClick={() => onCategoryChange(category)}
+            className={`filterButton ${selectedCategory === category ? 'active' : ''}`}
+          >
+            {category}
+            <span className="filterCount">
+              {skillCount}
+            </span>
+          </button>
+        );
+      })}
     </div>
   );
 };
