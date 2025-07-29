@@ -21,7 +21,7 @@ const Banner = () => {
                             </Link>
 
                             <Link className="button button-contrast" href="/cv-claudia.pdf" target="_blank">
-                                <Paperclip className="mr-2" /> Descargar cv
+                                <Paperclip className="mr-2" /> Descarga mi cv
                             </Link>
                         </div>
                     </div>
@@ -37,9 +37,9 @@ const Banner = () => {
                         <h2>Sobre mi</h2>
                         <p>claudia.diezsan@gmail.com</p>
                     </div>
-                    <p className="presentation">Desarrolladora front-end apasionada por crear <span>experiencias digitales</span> excepcionales. 
+                    <p className="presentation">Desarrolladora front-end apasionada por crear <span>experiencias digitales</span>. 
                         Me especializo en <span>React, TypeScript y diseño responsive</span> transformando ideas en aplicaciones web modernas, 
-                        intuitivas y escalables que impactan positivamente a los usuarios.</p>
+                        intuitivas y escalables.</p>
                 </div>
                 
             </div>

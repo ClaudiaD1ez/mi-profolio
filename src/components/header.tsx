@@ -1,15 +1,16 @@
 'use client'
 
 import { itemsNavbar } from "@/src/data"
-import Image from "next/image"
 import { ToggleTheme } from "./toggle-theme"
 import Link from "next/link"
-import { useTheme } from "next-themes"
 import { LogoImage } from "./ui/logo-img"
+import { headerMovile } from '@/src/hooks/header'
 
 import "../styles/header.scss"
 
 const Header = () => {
+
+  headerMovile();
 
   return (
     <header className="headerSection" id="header">
@@ -28,6 +29,12 @@ const Header = () => {
             ))}
           </div>
         </nav>
+
+        <div className="menuButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
         <ToggleTheme />
       </div>

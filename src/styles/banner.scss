@@ -72,7 +72,134 @@
         font-size: 22px;
 
         span {
-          border-bottom: 2px solid var(--accent);
+          border-bottom: 1px solid var(--accent);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .banner-central{
+    .bannerContainer{
+      .infoBottom {
+        .presentation,.about p {
+          font-size: 20px;
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 992px) {
+  .banner-central {
+    .bannerContainer {
+      height: 82vh;
+      text-align: center;
+
+      .infoTop {
+        .imgContainer {
+          display: none;
+        }
+
+        .btnsContainer {
+          width: 100%;
+        }
+      }
+
+      .infoBottom {
+        flex-direction: column;
+        gap: 26px;
+
+        .about {
+          p {
+            font-size: 18px;
+            margin: 0;
+          }
+        }
+
+        .presentation {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-central {
+    .bannerContainer {
+      .infoTop {
+        .name {
+          font-size: 90px;
+        }
+
+        .btnsContainer {
+          flex-direction: column;
+          grid-auto-flow: 16px;
+
+          .button {
+            min-width: 240px;
+          }
+        }
+      }
+
+      .infoBottom {
+        .presentation {
+          font-size: 18px;
+        }
+
+        .about {
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .banner-central {
+    .bannerContainer {
+      .infoTop {
+        .name {
+          font-size: 72px;
+          font-weight: 700;
+        }
+
+        .hello {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .banner-central {
+    .bannerContainer {
+      .infoTop {
+        .name {
+          font-size: 62px;
+        }
+
+        .hello {
+          font-size: 24px;
+        }
+
+        .btnsContainer {
+          .button {
+            min-width: 198px;
+          }
+        }
+      }
+
+      .infoBottom {
+        .about {
+          h2 {
+            font-size: 32px;
+          }
         }
       }
     }

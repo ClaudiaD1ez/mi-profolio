@@ -18,7 +18,6 @@
       border-radius: 12px;
       background-color: var(--background-card);
       border: 2px solid var(--card-foreground);
-      width: 100%;
 
       .imgCard {
         .companyImg {
@@ -68,6 +67,7 @@
           display: flex;
           justify-content: flex-start;
           gap: 12px;
+          flex-wrap: wrap;
 
           .tech {
             padding: 4px 12px;
@@ -80,5 +80,60 @@
         }
       }
     }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .experienceSection .cardsContainer {
+    width: 100%;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard {
+    gap: 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .topInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .topInfo .extraInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .experienceSection .cardsContainer .cardExperience {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .imgCard .companyImg {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experienceSection .cardsContainer .cardExperience .infocard .topInfo {
+    gap: 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .topInfo .extraInfo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .experienceSection .cardsContainer .cardExperience .infocard .topInfo .position {
+    font-size: 22px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 376px) {
+  .experienceSection .cardsContainer .cardExperience {
+    padding: 32px 22px;
   }
 }
