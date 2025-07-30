@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 11px 0;
+    position: relative;
 
     .nav {
       display: flex;
@@ -62,20 +63,33 @@
 
   @media (max-width: 992px) {
     .headerContainer {
-      .nav {
-        flex-direction: column;
-        justify-content: flex-start;
+      .menuHeader {
         align-items: end;
+        flex-direction: column;
         background-color: var(--background-lingth);
-        position: fixed;
         height: 100vh;
-        width: 100%;
+        justify-content: start;
+        margin: 0;
+        position: fixed;
         right: 0;
         top: -21px;
+        left: 1020px;
+        transition: transform .5s ease-in-out;
+        width: 100%;
         z-index: 2;
-        transform: translateY(-110%);
-        transition: transform .5s easy-in-out;
-        margin: 0;
+          .nav {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 25px;
+            .options a {
+              font-size: 20px;
+            }
+          }
+          &.open {
+            top: 58px;
+            transform: translateX(-1020px);
+          }
       }
       .menuButton {
         display: block;
@@ -86,7 +100,7 @@
         cursor: pointer;
 
         span {
-          background-color: white;
+          background-color: var(--text);
           display: block;
           position: relative;
           height: 2px;
@@ -109,6 +123,9 @@
             transform: rotate(-45deg) translate(2.6px, -4.8px);
           }
         }
+      }
+      .toggleBtn {
+        margin-right: 50px;
       }
     }
   }

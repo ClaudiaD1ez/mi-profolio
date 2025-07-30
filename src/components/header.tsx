@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container headerContainer">
         <LogoImage />
 
-        <nav className="z-20">
+        <nav className="menuHeader">
           <div className="nav">
             {itemsNavbar.map((item) => (
               <div key={item.id} className="options">

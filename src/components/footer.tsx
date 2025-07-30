@@ -1,6 +1,7 @@
 import { Heart , Mail, MapPin, Phone } from "lucide-react";
 import "../styles/footer.scss"
 import { dataRRSS } from "@/src/data";
+import { itemsNavbar } from "@/src/data"
 import Link from "next/link";
 import Image from "next/image";
 
@@ -33,12 +34,12 @@ const Footer = () => {
                 <div className="footerInfo">
                     <h3 className="footerTitle">Navegación</h3>
                     <div className="footerNav">
-                        {['Inicio', 'Experiencia', 'Habilidades', 'Proyectos'].map((link) => (
-                            <div key={link}>
-                                <a className="footerLinks">
-                                    {link}
-                                </a>
-                            </div>
+                        {itemsNavbar.map((item) => (
+                        <div key={item.id} className="options">
+                            <Link className="footerLinks" href={item.link}>
+                                {item.title}
+                            </Link>
+                        </div>
                         ))}
                     </div>
                 </div>

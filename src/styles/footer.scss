@@ -6,6 +6,8 @@
     .mainInfoFooter {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
       padding: 25px 0;
 
       .footerTitle {
@@ -41,7 +43,9 @@
           .footerLinks {
             font-size: 16px;
             cursor: pointer;
+            color: var(--text);
             border-bottom: 1px solid var(--background-lingth);
+            text-decoration: none;
 
             &:hover {
               border-bottom: 1px solid var(--accent);
@@ -78,4 +82,34 @@
       }
     }
   }
+}
+
+@media (max-width: 767px) {
+  .footerSection {
+    .footerContainer {
+      .mainInfoFooter {
+        .socialFooter {
+          display: flex;
+          gap: 20px;
+        }
+      }
+      .finalFooter {
+        flex-direction: column;
+        gap: 0;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 560px) {
+    .footerSection .footerContainer .mainInfoFooter .footerInfo .infoContacto .dato p,
+    .footerSection .footerContainer .mainInfoFooter .footerInfo .footerNav .footerLinks,
+    .footerSection .footerContainer .finalFooter {
+      font-size: 14px;
+    }
 }

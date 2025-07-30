@@ -26,12 +26,6 @@ export const itemsNavbar = [
         icon: <BookText size={20} />,
         link: "#skills",
     },
-    {
-        id: 5,
-        title: "Contacto",
-        icon: <Mail size={20} />,
-        link: "#contact",
-    },
 ];
 
 
