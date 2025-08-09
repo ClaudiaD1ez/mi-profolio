@@ -140,13 +140,13 @@ export const dataPortfolio = [
     },
     {
         id: 2,
-        title: 'Weather Forecast App',
-        description: 'Aplicación del clima con diseño moderno, mapas interactivos y pronósticos detallados de múltiples ubicaciones.',
-        image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-        videoUrl: 'https://example.com/video3',
-        githubUrl: 'https://github.com/claudia/weather-app',
-        category: 'Mobile App',
-        year: '2023'
+        title: 'Portfolio Website',
+        description: 'Sitio web personal con animaciones avanzadas, modo oscuro/claro y optimización SEO completa.',
+        image: '/img/proyectos/portfolio.png',
+        videoUrl: 'https://example.com/video6',
+        githubUrl: 'https://github.com/claudia/portfolio',
+        category: 'Portfolio',
+        year: '2024'
     },
     {
         id: 3,
@@ -158,36 +158,36 @@ export const dataPortfolio = [
         category: 'Productivity',
         year: '2024'
     },
-    {
-        id: 4,
-        title: 'Social Media Platform',
-        description: 'Red social con feed en tiempo real, sistema de mensajería, notificaciones push y modo offline.',
-        image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-        videoUrl: 'https://example.com/video4',
-        githubUrl: 'https://github.com/claudia/social-platform',
-        category: 'Social',
-        year: '2024'
-    },
-    {
-        id: 5,
-        title: 'Learning Management System',
-        description: 'Plataforma educativa con cursos interactivos, sistema de calificaciones y panel de progreso estudiantil.',
-        image: 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=800',
-        videoUrl: 'https://example.com/video5',
-        githubUrl: 'https://github.com/claudia/lms-platform',
-        category: 'Education',
-        year: '2023'
-    },
-    {
-        id: 6,
-        title: 'Portfolio Website',
-        description: 'Sitio web personal con animaciones avanzadas, modo oscuro/claro y optimización SEO completa.',
-        image: '/img/proyectos/portfolio.png',
-        videoUrl: 'https://example.com/video6',
-        githubUrl: 'https://github.com/claudia/portfolio',
-        category: 'Portfolio',
-        year: '2024'
-    }
+    // {
+    //     id: 4,
+    //     title: 'Social Media Platform',
+    //     description: 'Red social con feed en tiempo real, sistema de mensajería, notificaciones push y modo offline.',
+    //     image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //     videoUrl: 'https://example.com/video4',
+    //     githubUrl: 'https://github.com/claudia/social-platform',
+    //     category: 'Social',
+    //     year: '2024'
+    // },
+    // {
+    //     id: 5,
+    //     title: 'Learning Management System',
+    //     description: 'Plataforma educativa con cursos interactivos, sistema de calificaciones y panel de progreso estudiantil.',
+    //     image: 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //     videoUrl: 'https://example.com/video5',
+    //     githubUrl: 'https://github.com/claudia/lms-platform',
+    //     category: 'Education',
+    //     year: '2023'
+    // },
+    // {
+    //     id: 6,
+    //     title: 'Weather Forecast App',
+    //     description: 'Aplicación del clima con diseño moderno, mapas interactivos y pronósticos detallados de múltiples ubicaciones.',
+    //     image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //     videoUrl: 'https://example.com/video3',
+    //     githubUrl: 'https://github.com/claudia/weather-app',
+    //     category: 'Mobile App',
+    //     year: '2023'
+    // }
 ];
 
 
