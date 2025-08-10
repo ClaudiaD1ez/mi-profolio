@@ -140,7 +140,7 @@ export const dataPortfolio = [
     },
         {
         id: 2,
-        title: 'Calculadora / Tarificador - DKV',
+        title: 'Tarificador - DKV',
         description: 'Herramienta web interactiva que permite a los usuarios calcular precios y promociones en tiempo real. Implementé la lógica de cálculo, la maquetación responsive y la optimización para que fuera ligera y fácil de usar en cualquier dispositivo.',
         image: '/img/proyectos/calculadora-dkv.png',
         videoUrl: 'https://example.com/video2',

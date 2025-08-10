@@ -11,7 +11,7 @@
 
     .cardProyect {
       position: relative;
-      width: 30%;
+      width: 31%;
       height: 600px;
       background-size: cover;
       background-position: center;
@@ -103,4 +103,83 @@
   inset: 0;
   z-index: 1;
   background: var(--proyectos-card);
+}
+
+
+
+// Media Query
+@media (max-width: 1400px) {
+  .proyectSection {
+    .cardsContainer {
+      justify-content: space-between;
+      gap: unset;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .proyectSection {
+    .cardsContainer {
+      .cardProyect {
+        width: 32%;
+        height: 600px;
+        .hoverSection {
+          .hoverContainer {
+            height: 93%;
+            .hoverButtons {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .proyectSection {
+    .cardsContainer {
+      flex-direction: column;
+      gap: 30px;
+      .cardProyect {
+        width: 80%;
+        height: 420px;
+        .hoverSection {
+          .hoverContainer {
+            height: 80%;
+            .hoverButtons {
+              flex-direction: row;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .proyectSection {
+    .cardsContainer {
+      .cardProyect {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .proyectSection {
+    .cardsContainer {
+      .cardProyect {
+        height: 550px;
+        .hoverSection {
+          .hoverContainer {
+            .hoverButtons {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
 }
