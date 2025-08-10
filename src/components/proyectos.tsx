@@ -26,26 +26,22 @@ const Proyectos = () => {
                                 {/* Hover content */}
                                 <div className="hoverSection">
                                     <div className="hoverContainer">
-                                    <div className="manchetaCategory">
-                                        <span className="text">{project.category}</span>
-                                    </div>
+                                        <div className="manchetaYear">
+                                            <span className="text">{project.year}</span>
+                                        </div>
 
-                                    <div className="manchetaYear">
-                                        <span className="text">{project.year}</span>
-                                    </div>
+                                        <p className="description">{project.description}</p>
 
-                                    <p className="description">{project.description}</p>
-
-                                    <div className="hoverButtons">
-                                        <a href={project.videoUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary btn-demo">
-                                        <Play size={18} />
-                                        <span>Ver Demo</span>
-                                        </a>
-                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary btn-code">
-                                        <Github size={18} />
-                                        <span>Ver Código</span>
-                                        </a>
-                                    </div>
+                                        <div className="hoverButtons">
+                                            <a href={project.videoUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary btn-demo">
+                                            <Play size={18} />
+                                            <span>Ver Demo</span>
+                                            </a>
+                                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="button button-secondary btn-code">
+                                            <Github size={18} />
+                                            <span>Ver Código</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

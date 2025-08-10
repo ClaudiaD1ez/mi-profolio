@@ -80,9 +80,9 @@ export const dataAboutExperience = [
       position: 'Front-End Developer',
       period: '2022 - Presente',
       location: 'Madrid, España',
-      description: 'Lidero el desarrollo de aplicaciones React complejas, implementando arquitecturas escalables y mejorando la experiencia de usuario en un 40%.',
+      description: 'En esta agencia, trabajé en el desarrollo de landing pages optimizadas para conversión de grandes marcas como Jazztel, MásMóvil y Sanitas. El modelo “end-to-end” implicaba participar en todo el proceso: desde la maquetación y desarrollo frontend, hasta la optimización del rendimiento y la integración de formularios de captación. Estas páginas se desarrollaron siguiendo principios de UX/UI, diseño responsivo y buenas prácticas de accesibilidad y la realización de test A/B para mejorar la tasa de conversión.',
       logo: '/img/accom.png',
-      technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL']
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Webpack', 'jQuery', 'Bootstrap', 'Git']
     },
     {
       id:2,
@@ -90,9 +90,9 @@ export const dataAboutExperience = [
       position: 'Junior Front-End Developer',
       period: '2021 - 2022',
       location: 'Madrid, España',
-      description: 'Desarrollé interfaces de usuario modernas para startups fintech, colaborando estrechamente con equipos de diseño UX/UI y backend.',
+      description: 'Formé parte del equipo encargado de la creación y optimización de las páginas de formaciones de Ucademy, una plataforma educativa online. Utilizando WordPress como CMS y aplicando conocimientos de PHP básico para personalizaciones específicas, garantizando una navegación clara, una estructura optimizada para SEO y una experiencia de usuario fluida.',
       logo: '/img/ucademy.webp',
-      technologies: ['Vue.js', 'JavaScript', 'SASS', 'REST APIs']
+      technologies: ['WordPress', 'PHP', 'HTML', 'CSS']
     },
     {
       id:3,
@@ -100,9 +100,9 @@ export const dataAboutExperience = [
       position: 'Student Full-Stack Developer',
       period: '2020 - 2020',
       location: 'Madrid, España',
-      description: 'Comencé mi carrera desarrollando sitios web responsive y landing pages, aprendiendo las mejores prácticas de desarrollo web moderno.',
+      description: 'Completé un bootcamp intensivo en desarrollo web Full-Stack, adquiriendo una base sólida en los lenguajes y herramientas clave del sector. En el área de frontend, trabajé con HTML5, CSS3, JavaScript y TypeScript, así como con librerías y frameworks que facilitan la creación de interfaces dinámicas y responsivas. En backend, aprendí a desarrollar aplicaciones con Node.js y a gestionar bases de datos relacionales y no relacionales (MySQL y MongoDB). Durante el programa, desarrollé proyectos prácticos de principio a fin, lo que me permitió entender el ciclo completo de desarrollo y aplicar metodologías ágiles.',
       logo: '/img/codenotch.jpeg',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap']
+      technologies: ['HTML5', 'CSS3', 'SASS', 'JavaScript', 'Node.js', 'Angular', 'ReactJS', 'MySQL', 'MongoDB', 'Git']
     }
 ];
 
@@ -130,33 +130,33 @@ export const dataSlider = [
 export const dataPortfolio = [
      {
         id: 1,
-        title: 'Landing de Jazztel',
-        description: 'Panel de administración completo para tienda online con gestión de productos, pedidos y análisis en tiempo real.',
+        title: 'Landing de MasMovil',
+        description: 'Landing page orientada a la captación de clientes para servicios de telecomunicaciones, con formulario destacado en el banner y un tarificador de precios interactivo que permite al usuario personalizar su oferta de forma rápida y sencilla.',
         image: '/img/proyectos/landing-jazztel.png',
         videoUrl: 'https://example.com/video1',
         githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
         category: 'Web App',
         year: '2024'
     },
-    {
+        {
         id: 2,
-        title: 'Portfolio Website',
-        description: 'Sitio web personal con animaciones avanzadas, modo oscuro/claro y optimización SEO completa.',
+        title: 'Calculadora / Tarificador - DKV',
+        description: 'Herramienta web interactiva que permite a los usuarios calcular precios y promociones en tiempo real. Implementé la lógica de cálculo, la maquetación responsive y la optimización para que fuera ligera y fácil de usar en cualquier dispositivo.',
+        image: '/img/proyectos/calculadora-dkv.png',
+        videoUrl: 'https://example.com/video2',
+        githubUrl: 'https://github.com/claudia/task-manager',
+        category: 'Tarificador',
+        year: '2025'
+    },
+    {
+        id: 3,
+        title: 'Portfolio Website con React',
+        description: 'Desarrollo de mi propio portfolio como SPA utilizando React, Sass y TypeScript. Incluye animaciones suaves, secciones dinámicas y un diseño modular que facilita la escalabilidad y el mantenimiento del código.',
         image: '/img/proyectos/portfolio.png',
         videoUrl: 'https://example.com/video6',
         githubUrl: 'https://github.com/claudia/portfolio',
         category: 'Portfolio',
-        year: '2024'
-    },
-    {
-        id: 3,
-        title: 'Calculadora / Tarificador - DKV',
-        description: 'Aplicación de gestión de tareas con funcionalidades avanzadas como colaboración en tiempo real y notificaciones.',
-        image: '/img/proyectos/calculadora-dkv.png',
-        videoUrl: 'https://example.com/video2',
-        githubUrl: 'https://github.com/claudia/task-manager',
-        category: 'Productivity',
-        year: '2024'
+        year: '2025'
     },
     // {
     //     id: 4,
@@ -192,7 +192,7 @@ export const dataPortfolio = [
 
 
 export const dataServices = [
-    {
+     {
         id: 1,
         title: "Código Limpio",
         url: "/icons/codigo.png",
@@ -210,19 +210,19 @@ export const dataServices = [
         url: "/icons/proteger.png",
         name: "Implemento medidas de seguridad frontend, validaciones robustas y testing automatizado para garantizar aplicaciones confiables.",
     },
-        {
+    {
         id: 4,
         title: "Escalabilidad",
         url: "/icons/crecer.png",
         name: "Desarrollo aplicaciones con arquitecturas modulares y escalables que crecen con las necesidades del negocio a largo plazo.",
     },
-        {
+    {
         id: 5,
         title: "Conexión a APIs",
         url: "/icons/api.png",
         name: "Integro aplicaciones frontend con APIs REST y GraphQL, manejando estados complejos y sincronización de datos en tiempo real.",
     },
-        {
+    {
         id: 6,
         title: "Rendimiento Optimizado",
         url: "/icons/rayo.png",
