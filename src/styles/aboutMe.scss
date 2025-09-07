@@ -27,6 +27,10 @@
         }
       }
 
+      .topInfo.mobile {
+        display: none;
+      }
+
       .infocard {
         display: flex;
         flex-direction: column;
@@ -78,6 +82,10 @@
             border-radius: 50px;
           }
         }
+
+        .btn-vermas {
+          display: none;
+        }
       }
     }
   }
@@ -105,12 +113,42 @@
 
 @media (max-width: 768px) {
   .experienceSection .cardsContainer .cardExperience {
+    position: relative;
     flex-direction: column;
     gap: 16px;
   }
   .experienceSection .cardsContainer .cardExperience .imgCard .companyImg {
     width: 56px;
     height: 56px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .description {
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard.open .description{
+    max-height: 500px; /* valor suficiente para mostrar todo el contenido */
+    height: 100%;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .btn-vermas {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .img-flecha{
+    filter: var(--filter);
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard.open .img-flecha{
+    transform: rotate(180deg);
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .btn-vermas .text-ver-mas {
+    margin: 0;
+    font-size: 16px;
+    text-decoration: underline;
   }
 }
 
@@ -121,6 +159,21 @@
   .experienceSection .cardsContainer .cardExperience .infocard .topInfo .extraInfo {
     flex-direction: column;
   }
+  .experienceSection .cardsContainer .cardExperience {
+    padding: 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .imgCard {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .topInfo.mobile {
+    display: block;
+    font-size: 14px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .topInfo .extraInfo {
+    display: none;
+  }
 }
 
 @media (max-width: 420px) {
@@ -128,12 +181,31 @@
     font-size: 22px;
   }
   .experienceSection .cardsContainer .cardExperience .infocard .description {
+    max-height: 55px;
+  }
+  .experienceSection .cardsContainer .cardExperience .imgCard .companyImg {
+    width: 45px;
+    height: 45px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard {
+    gap: 13px;
+  }
+  .experienceSection .cardsContainer .cardExperience {
+    gap: 6px
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .description {
     font-size: 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard .technologies {
+    gap: 5px;
   }
 }
 
 @media (max-width: 376px) {
   .experienceSection .cardsContainer .cardExperience {
-    padding: 32px 22px;
+    padding: 32px 16px;
+  }
+  .experienceSection .cardsContainer .cardExperience .infocard.open .description{
+    max-height: 800px;
   }
 }
