@@ -5,7 +5,6 @@ import Services from "@/src/components/services";
 import Proyectos from "@/src/components/proyectos";
 import Footer from "@/src/components/footer";
 import Header from "@/src/components/header";
-import Franja from "@/src/components/franja";
 import Skills from "@/src/components/skills";
 
 
@@ -15,7 +14,6 @@ export default function Home() {
       <Header/>
       {/* <Navbar/> */}
       <Banner/>
-      <Franja/>
       <AboutMe/>
       <Proyectos />
       <Skills />

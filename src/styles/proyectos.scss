@@ -5,38 +5,30 @@
   .cardsContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 44px;
+    gap: 36px;
     flex-wrap: wrap;
+    margin-bottom: 36px;
+
+    &.centerCards {
+      justify-content: center;
+    }
 
     .cardProyect {
       position: relative;
       width: 31%;
-      height: 600px;
-      background-size: cover;
+      height: 375px;
+      background-size: 76%;
+      background-repeat: no-repeat;
       background-position: center;
-      border-radius: 24px;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      border: 2px solid var(--text);
+      cursor: pointer;
+      transition: filter 0.3s ease;
 
-      .overlay-darken {
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0);
-        transition: background-color 0.3s ease;
-        z-index: 1;
-      }
-
-      &:hover {
-        .overlay-darken {
-          background-color: var(--proyectos-overlay);
-        }
-
-        .hoverSection {
-          opacity: 1;
-          visibility: visible;
-          pointer-events: auto;
-        }
+      &.inactive {
+        filter: grayscale(100%);
+        pointer-events: none;
       }
 
       .cardTitleOverlay {
@@ -45,138 +37,81 @@
         left: 0;
         width: 100%;
         text-align: center;
-        z-index: 2;
 
         .title {
-          color: var(--proyectos-card-text);
+          color: var(--text);
           font-size: 20px;
           margin: 0;
         }
       }
-
-      .hoverSection {
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-        z-index: 3;
-
-        .hoverContainer {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-          padding: 22px;
-          color: var(--proyectos-card-text);
-          text-align: center;
-
-          .hoverButtons {
-            display: flex;
-            gap: 0.75rem;
-            margin-top: 1rem;
-          }
-        }
-      }
     }
   }
 
-  .proyectContainer {
-    .moreContainer {
-      padding-top: 40px;
+  .activeSection {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 36px;
+
+    .activeCardWrapper {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      gap: 36px;
+      align-items: flex-start;
+      width: 100%;
+      max-height: 300px;
 
-      .text {
-        font-size: 20px;
-        text-align: center;
-      }
-    }
-  }
-}
+      .activeCard {
+        width: 31%;
+        height: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-size: 68%;
+        background-repeat: no-repeat;
+        background-position: 46% 40%;
+        border: 2px solid var(--text);
 
-.backgroundFilter {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: var(--proyectos-card);
-}
-
-
-
-// Media Query
-@media (max-width: 1400px) {
-  .proyectSection {
-    .cardsContainer {
-      justify-content: space-between;
-      gap: unset;
-    }
-  }
-}
-
-@media (max-width: 1199px) {
-  .proyectSection {
-    .cardsContainer {
-      .cardProyect {
-        width: 32%;
-        height: 600px;
-        .hoverSection {
-          .hoverContainer {
-            height: 93%;
-            .hoverButtons {
-              flex-direction: column;
-            }
-          }
+        h3 {
+          display: none;
         }
       }
-    }
-  }
-}
 
-@media (max-width: 992px) {
-  .proyectSection {
-    .cardsContainer {
-      flex-direction: column;
-      gap: 30px;
-      .cardProyect {
-        width: 80%;
-        height: 420px;
-        .hoverSection {
-          .hoverContainer {
-            height: 80%;
-            .hoverButtons {
-              flex-direction: row;
-            }
+      .projectDetails {
+        flex: 1;
+        padding: 30px 20px;
+        background-color: var(--background-light);
+        border-radius: 12px;
+        border: 2px solid var(--text);
+
+        .modalClose {
+          background: none;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+          float: right;
+          margin-bottom: 10px;
+        }
+
+        h2 {
+          margin-top: 0;
+          color: var(--text);
+        }
+
+        .manchetaYear {
+          margin-bottom: 10px;
+
+          .text {
+            font-weight: bold;
+            color: var(--text);
           }
         }
-      }
-    }
-  }
-}
 
-@media (max-width: 620px) {
-  .proyectSection {
-    .cardsContainer {
-      .cardProyect {
-        width: 100%;
-      }
-    }
-  }
-}
+        .description {
+          margin-bottom: 20px;
+          color: var(--text);
+        }
 
-@media (max-width: 420px) {
-  .proyectSection {
-    .cardsContainer {
-      .cardProyect {
-        height: 550px;
-        .hoverSection {
-          .hoverContainer {
-            .hoverButtons {
-              flex-direction: column;
-            }
+        .modalButtons {
+          .button {
+            text-decoration: none;
           }
         }
       }

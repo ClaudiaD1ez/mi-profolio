@@ -25,17 +25,14 @@ const Banner = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="imgContainer">
+                    {/* <div className="imgContainer">
                         <Image src="/img/portada-img.png" alt="Profile pic" className="img-portada" width={300} height={430}/>
-                    </div>
+                    </div> */}
                 </div> 
-
-                <section className="linea-franja"><div className="linea"></div></section>
 
                 <div className="infoBottom">
                     <div className="about">
                         <h2>Sobre mi</h2>
-                        <p>claudia.diezsan@gmail.com</p>
                     </div>
                     <p className="presentation">Desarrolladora front-end apasionada por crear <span>experiencias digitales</span>. 
                         Me especializo en <span>React, TypeScript y diseño responsive</span> transformando ideas en aplicaciones web modernas, 

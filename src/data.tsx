@@ -2,26 +2,26 @@ import { BookText, Briefcase, Brush, Code, Code2, CodeSquare, Database, Globe, H
 
 
 export const itemsNavbar = [
+    // {
+    //     id: 1,
+    //     title: "Home",
+    //     icon: <Home size={20} />,
+    //     link: "#home",
+    // },
     {
         id: 1,
-        title: "Home",
-        icon: <Home size={20} />,
-        link: "#home",
-    },
-    {
-        id: 2,
         title: "About Me",
         icon: <UserRound size={20} />,
         link: "#experience",
     },
         {
-        id: 3,
+        id: 2,
         title: "Proyectos",
         icon: <CodeSquare size={20} />,
         link: "#projects",
     },
     {
-        id: 4,
+        id: 3,
         title: "Skills",
         icon: <BookText size={20} />,
         link: "#skills",
@@ -134,7 +134,7 @@ export const dataPortfolio = [
         description: 'Landing page orientada a la captación de clientes para servicios de telecomunicaciones, con formulario destacado en el banner y un tarificador de precios interactivo que permite al usuario personalizar su oferta de forma rápida y sencilla.',
         image: '/img/proyectos/landing-jazztel.png',
         videoUrl: 'https://example.com/video1',
-        githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
+        // githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
         category: 'Web App',
         year: '2024'
     },
@@ -144,7 +144,7 @@ export const dataPortfolio = [
         description: 'Herramienta web interactiva que permite a los usuarios calcular precios y promociones en tiempo real. Implementé la lógica de cálculo, la maquetación responsive y la optimización para que fuera ligera y fácil de usar en cualquier dispositivo.',
         image: '/img/proyectos/calculadora-dkv.png',
         videoUrl: 'https://example.com/video2',
-        githubUrl: 'https://github.com/claudia/task-manager',
+        // githubUrl: 'https://github.com/claudia/task-manager',
         category: 'Tarificador',
         year: '2025'
     },
@@ -254,6 +254,7 @@ export const dataContact = [
         icon: <Inbox />,
     },
 ];
+
 
 export interface Skill {
   name: string;

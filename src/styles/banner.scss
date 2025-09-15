@@ -6,21 +6,11 @@
   .bannerContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 76vh;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 74vh;
     margin: auto;
-
-    .linea-franja {
-      background-color: var(--background-dark);
-      position: relative;
-      width: 100%;
-
-      .linea {
-        border: 2px solid var(--text);
-        margin: auto;
-        width: 100%;
-      }
-    }
 
     .infoTop {
       display: flex;
@@ -30,6 +20,7 @@
       .hello {
         font-size: 32px;
         color: var(--accent);
+        text-align: center;
       }
 
       .name {
@@ -45,8 +36,8 @@
         align-items: center;
         justify-content: center;
         gap: 6px;
-        width: fit-content;
-        margin-top: 25px;
+        width: 100%;
+        margin-top: 60px;
       }
     }
 
@@ -55,6 +46,9 @@
       justify-content: space-between;
       align-items: center;
       gap: 100px;
+      padding: 20px 60px;
+      border: 2px solid var(--text);
+      border-radius: 12px;
 
       .about {
         h2 {
@@ -70,6 +64,7 @@
 
       .presentation {
         font-size: 22px;
+        width: 76%;
 
         span {
           border-bottom: 1px solid var(--accent);

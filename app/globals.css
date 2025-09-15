@@ -17,7 +17,6 @@
   --tech-border: #c2400c3a;
 
   --proyectos-card: linear-gradient(#0000004d 0%, #00000045 40%, #000000e3 100%);
-  --proyectos-card-text: #F2F2F2;
   --proyectos-overlay: #000000b5;
 
   --accent: #f97316;
@@ -53,7 +52,6 @@
   --tech-border: #96492acf;
 
   --proyectos-card: linear-gradient(#0000004d 0%, #00000045 40%, #cececee3 100%);
-  --proyectos-card-text: #252D59;
   --proyectos-overlay: #fffefebe;
 
   --accent: #f97316;
@@ -130,7 +128,7 @@ html, body {
     margin: 0;
   }
   .subtitle{
-    font-size: 42px;
+    font-size: 44px;
     margin: 0;
   }
 } 
