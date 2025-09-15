@@ -2,15 +2,9 @@ import { BookText, Briefcase, Brush, Code, Code2, CodeSquare, Database, Globe, H
 
 
 export const itemsNavbar = [
-    // {
-    //     id: 1,
-    //     title: "Home",
-    //     icon: <Home size={20} />,
-    //     link: "#home",
-    // },
     {
         id: 1,
-        title: "About Me",
+        title: "GitHub",
         icon: <UserRound size={20} />,
         link: "#experience",
     },
@@ -33,19 +27,19 @@ export const dataRRSS = [
     {
         id: 1,
         name: "GitHub",
-        url: "img/icons/github.svg",
+        icon: "img/icons/github.svg",
         link: "https://github.com/ClaudiaD1ez",
     },
     {
         id: 2,
         name: "Linkedin",
-        url: "img/icons/linkedin.svg",
+        icon: "img/icons/linkedin.svg",
         link: "https://www.linkedin.com/in/claudia-d%C3%ADez-s%C3%A1nchez-510632240/",
     },
     {
         id: 3,
         name: "claudia.diezsan@gmail.com",
-        url: "img/icons/email.svg",
+        icon: "img/icons/email.svg",
         link: "",
     },
 ];

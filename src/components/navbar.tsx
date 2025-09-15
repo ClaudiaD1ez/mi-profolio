@@ -1,20 +1,21 @@
-import { itemsNavbar } from "@/src/data";
+import { dataRRSS } from "@/src/data";
 import Link from "next/link";
-import { ToggleTheme } from "./toggle-theme";
+import "../styles/navbar.scss";
 
 const Navbar = () => {
-    return (
-        <nav className="fixed z-20 flex flex-col items-center w-full mt-auto justify-center h-max top-100)">
-            <div className="flex items-center gap-2 justify-center px-4 py-1 dark:bg-white/10 bg-slate-800/10 background-blur-sm rounded-full">
-            {itemsNavbar.map((item) => (
-                <div key={item.id} className="cursor-pointer hover:dark-bg-slate-800 hover:bg-slate-400 px-3 py-2 rounded-full transition duration-150">
-                    <Link href={item.link}>{item.icon} </Link>
-                </div>
-            ))}
-            <ToggleTheme/>
-            </div>
-        </nav>
-    );
-} 
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        {dataRRSS.map((item) => (
+          <div key={item.id} className="navbar-item">
+            <Link href={item.link || "#"} target="_blank" rel="noopener noreferrer">
+              <img src={item.icon} alt={item.name} className="navbar-icon" />
+            </Link>
+          </div>
+        ))}
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
