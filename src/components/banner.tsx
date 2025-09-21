@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Conatiner from "./shared/container";
 import { Mail, Paperclip } from "lucide-react";
+import InteractiveBubblesBackground from '@/src/hooks/interactiveBubblesBackground';
 
 import "../styles/banner.scss"
 import "../styles/buttons.scss"
@@ -9,8 +10,11 @@ import "../styles/buttons.scss"
 const Banner = () => {
 
     return(
-        <div className="banner-central" id="home">
-            <div className="container bannerContainer">
+        <div className="banner-central" id="home" style={{ position: 'relative' }}>
+
+            <InteractiveBubblesBackground />
+
+            <div className="container bannerContainer" style={{ position: 'relative', zIndex: 2 }}>
                 <div className="infoTop">
                     <div className="mainInfo">
                         <h3 className="hello">Frontend Developer</h3>

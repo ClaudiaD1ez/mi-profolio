@@ -131,7 +131,7 @@ export const dataPortfolio = [
      {
         id: 1,
         title: 'Landing de MasMovil',
-        description: 'Landing page orientada a la captación de clientes para servicios de telecomunicaciones, con formulario destacado en el banner y un tarificador de precios interactivo que permite al usuario personalizar su oferta de forma rápida y sencilla.',
+        description: 'Landing page orientada a la captación de clientes para servicios de telecomunicaciones, con formulario destacado en el banner y un tarificador de precios dinámico e interactivo, desarrollado para calcular en tiempo real las diferentes combinaciones de servicios (internet, telefonía fija, líneas móviles, TV u opciones adicionales).',
         image: '/img/proyectos/landing-jazztel.png',
         videoUrl: 'https://example.com/video1',
         // githubUrl: 'https://github.com/claudia/ecommerce-dashboard',
@@ -141,7 +141,7 @@ export const dataPortfolio = [
         {
         id: 2,
         title: 'Tarificador - DKV',
-        description: 'Herramienta web interactiva que permite a los usuarios calcular precios y promociones en tiempo real. Implementé la lógica de cálculo, la maquetación responsive y la optimización para que fuera ligera y fácil de usar en cualquier dispositivo.',
+        description: 'Herramienta web interactiva para el cálculo de precios y promociones en tiempo real. El sistema permite al usuario combinar distintos servicios y visualizar de inmediato el coste final con las promociones aplicables. Implementé toda la lógica de cálculo dinámico en el frontend para garantizar respuestas instantáneas, así como una maquetación responsive que asegura una experiencia fluida en móviles, tablets y escritorio.',
         image: '/img/proyectos/calculadora-dkv.png',
         videoUrl: 'https://example.com/video2',
         // githubUrl: 'https://github.com/claudia/task-manager',
@@ -151,7 +151,7 @@ export const dataPortfolio = [
     {
         id: 3,
         title: 'Portfolio Website con React',
-        description: 'Desarrollo de mi propio portfolio como SPA utilizando React, Sass y TypeScript. Incluye animaciones suaves, secciones dinámicas y un diseño modular que facilita la escalabilidad y el mantenimiento del código.',
+        description: 'Desarrollo de mi propio portfolio como aplicación SPA utilizando React, Sass y TypeScript. El proyecto está estructurado con un enfoque modular y escalable. Implementé animaciones suaves y transiciones fluidas para mejorar la experiencia de usuario, así como secciones dinámicas. Además, se integraron componentes reutilizables y un sistema de estilos basado en Sass para garantizar consistencia visual y flexibilidad en el diseño.',
         image: '/img/proyectos/portfolio.png',
         videoUrl: 'https://example.com/video6',
         githubUrl: 'https://github.com/claudia/portfolio',

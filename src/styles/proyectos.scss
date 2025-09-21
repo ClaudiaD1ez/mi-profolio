@@ -57,11 +57,11 @@
       gap: 36px;
       align-items: flex-start;
       width: 100%;
-      max-height: 300px;
+      max-height: 100%;
 
       .activeCard {
         width: 31%;
-        height: 300px;
+        height: 100%;
         border-radius: 12px;
         overflow: hidden;
         background-size: 68%;
