@@ -51,7 +51,7 @@ const Footer = () => {
                         {dataRRSS.map((data) => (
                             <div key={data.id} className="social">
                                 <Link href={data.link}>
-                                    <Image src={data.url} alt="Image" width={20} height={20} className="footerImg"/>
+                                    <Image src={data.icon} alt="Image" width={20} height={20} className="footerImg"/>
                                 </Link>
                             </div>
                         ))}

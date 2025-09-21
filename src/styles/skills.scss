@@ -170,34 +170,6 @@
     }
   }
 
-  @media (max-width: 640px) {
-    .skillContainer {
-      padding: 0 1rem;
-
-      .mainContainer {
-        .skillsCard,
-        .skillFilterContainer .radarchartContainer {
-          padding: 1rem;
-        }
-
-        .skillsCard {
-          .logosContainer {
-            gap: 1rem;
-          }
-
-          .levelLegend .legend-items {
-            flex-direction: column;
-            gap: 0.5rem;
-          }
-        }
-
-        .skillFilterContainer .filtersContainer {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-    }
-  }
-
   @media (max-width: 992px) {
     .skillContainer {
       padding: 0;
@@ -213,9 +185,50 @@
     }
   }
 
+  @media (max-width: 640px) {
+    .skillContainer {
+      padding: 0 1rem;
+
+      .mainContainer {
+        .skillsCard,
+        .skillFilterContainer .radarchartContainer {
+          padding: 1rem;
+        }
+
+        .skillsCard {
+          .logosContainer {
+            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        .skillFilterContainer .filtersContainer {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+
   @media (max-width: 460px) {
-    .skillContainer .mainContainer .skillsCard .logosContainer {
-      grid-template-columns: repeat(3, 1fr);
+    .skillContainer {
+      .mainContainer {
+        .skillsCard,
+        .skillFilterContainer .radarchartContainer {
+          padding: 0;
+        }
+        .skillsCard {
+          .logosContainer {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        .skillsCard .levelLegend .legend-items {
+          flex-wrap: wrap;
+          gap: 0;
+          .legend-item {
+            padding: 0 8px 8px;
+          }
+        }
+      }
     }
   }
 

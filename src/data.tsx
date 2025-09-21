@@ -40,7 +40,13 @@ export const dataRRSS = [
         id: 3,
         name: "claudia.diezsan@gmail.com",
         icon: "img/icons/email.svg",
-        link: "",
+        link: "mailto:claudia.diezsan@gmail.com",
+    },
+        {
+        id: 3,
+        name: "telefono",
+        icon: "img/icons/phone.svg",
+        link: "tel:+34650347503",
     },
 ];
 

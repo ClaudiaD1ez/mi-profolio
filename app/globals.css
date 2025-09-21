@@ -12,6 +12,8 @@
   --card-background-dark: #ffffff;
   --card-foreground: #e5e7eb;
 
+  --navbar-background: #d8dfee;
+
   --tech-background: #FFEDD5;
   --tech-text: #C2410C;
   --tech-border: #c2400c3a;
@@ -46,6 +48,8 @@
   --card-background-ligth: #1f2937;
   --card-background-dark: #292929;
   --card-foreground: #374151;
+
+  --navbar-bacground: #858585;
 
   --tech-background: #c2400c3a;
   --tech-text: #cdb698;

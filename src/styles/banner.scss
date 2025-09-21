@@ -74,12 +74,27 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .banner-central {
+    .bannerContainer {
+      .infoBottom {
+        .presentation {
+          width: 74%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .banner-central{
     .bannerContainer{
       .infoBottom {
-        .presentation,.about p {
-          font-size: 20px;
+        .presentation {
+          width: 68%;
+          .about p {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -88,11 +103,18 @@
 
 @media (max-width: 992px) {
   .banner-central {
+    padding-top: 86px;
+
     .bannerContainer {
       height: 82vh;
       text-align: center;
+      gap: 62px;
 
       .infoTop {
+        .name {
+          font-size: 108px;
+        }
+
         .imgContainer {
           display: none;
         }
@@ -104,7 +126,8 @@
 
       .infoBottom {
         flex-direction: column;
-        gap: 26px;
+        padding: 30px;
+        gap: 14px;
 
         .about {
           p {
@@ -115,6 +138,20 @@
 
         .presentation {
           margin: 0;
+          width: 100%;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-central {
+    .bannerContainer {
+      .infoTop {
+        .name {
+          font-size: 84px;
         }
       }
     }
@@ -123,7 +160,10 @@
 
 @media (max-width: 576px) {
   .banner-central {
-    .bannerContainer {
+    height: 100%;
+    .bannerContainer {      
+      height: 100%;
+      padding-bottom: 6rem;
       .infoTop {
         .name {
           font-size: 90px;

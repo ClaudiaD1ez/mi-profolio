@@ -25,7 +25,7 @@ export function LogoImage() {
       src={imageSrc}
       alt="Foto de portada"
       width={200}
-      height={30}
+      height={40}
       className="img-portada"
     />
   )

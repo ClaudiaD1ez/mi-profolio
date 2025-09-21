@@ -14,7 +14,7 @@
     flex-direction: column;
     gap: 29px;
     padding: 12px 8px;
-    background: rgba(30, 41, 59, 0.2);
+    background: var(--navbar-background);
     backdrop-filter: blur(10px);
     border-radius: 30px;
 
@@ -37,6 +37,18 @@
         height: 20px;
         object-fit: contain;
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    top: 91%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .navbar-container {
+      flex-direction: row;
     }
   }
 }

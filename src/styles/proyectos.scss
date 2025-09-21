@@ -118,3 +118,144 @@
     }
   }
 }
+
+  @media (max-width: 1400px) {
+    .proyectSection {
+      .cardsContainer {
+        .cardProyect {
+            width: 30%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .proyectSection {
+      .cardsContainer {
+        gap: 30px;
+        .cardProyect {
+          height: 276px;
+        }
+      }
+    }
+  }
+
+  // Estilos para mobile
+  @media (max-width: 767px) {
+    .cardsContainer {
+      display: none; // Ocultar el contenedor desktop en mobile
+    }
+
+    .activeSection {
+      display: none; // Ocultar la sección activa desktop en mobile
+    }
+
+    .mobileCardsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      .mobileCardWrapper {
+        width: 100%;
+        
+        .cardProyect.mobileCard {
+          width: 100%;
+          height: 250px;
+          background-size: 54%;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 2px solid var(--text);
+          cursor: pointer;
+          transition: all 0.3s ease;
+          
+          .cardTitleOverlay {
+            position: absolute;
+            bottom: 16px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0 16px;
+            
+            .title {
+              color: var(--text);
+              font-size: 18px;
+              margin: 0;
+            }
+          }
+        }
+        
+        .projectDetails.mobileDetails {
+          width: 92%;
+          margin-top: 12px;
+          padding: 20px;
+          background-color: var(--background-light);
+          border-radius: 12px;
+          border: 2px solid var(--text);
+          overflow: hidden;
+          
+          .modalClose {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            float: right;
+            margin-bottom: 10px;
+            color: var(--text);
+            padding: 5px;
+            
+            &:hover {
+              background-color: rgba(0,0,0,0.1);
+              border-radius: 4px;
+            }
+          }
+          
+          h2 {
+            margin-top: 0;
+            color: var(--text);
+            font-size: 22px;
+          }
+          
+          .manchetaYear {
+            margin-bottom: 15px;
+            
+            .text {
+              font-weight: bold;
+              color: var(--text);
+              background-color: var(--accent-color, #007bff);
+              padding: 4px 8px;
+              border-radius: 4px;
+              font-size: 14px;
+            }
+          }
+          
+          .description {
+            margin-bottom: 20px;
+            color: var(--text);
+            line-height: 1.6;
+          }
+          
+          .modalButtons {
+            .button {
+              text-decoration: none;
+              display: inline-block;
+              width: 87%;
+              text-align: center;
+              padding: 12px 20px;
+              border-radius: 8px;
+              font-weight: 500;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Asegurar que en desktop no se muestren los estilos mobile
+  @media (min-width: 768px) {
+    .mobileCardsContainer {
+      display: none;
+    }
+  }
